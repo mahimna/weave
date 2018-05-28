@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--   <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css"> -->
+  <style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+  </style>
+  <link href="weave_landing.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="weave-logo">
+    <img class="weave-logo-image" src="weave-logo-coloured.png"/>
+  </div>
+  <div class="weave-signup">
+    <form action="https://weavetravels.us18.list-manage.com/subscribe/post?u=775ce3f7a792be54e6a654341&amp;id=093171f7a8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="weave-subscribe-form" target="_blank" novalidate>
+      <input type="email" value="" name="EMAIL" class="email-input" id="mce-EMAIL" placeholder="email address" required autocomplete="off">
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_775ce3f7a792be54e6a654341_093171f7a8" tabindex="-1" value=""></div>
+        <input type="submit" value="add to mailing list" name="subscribe" id="mc-embedded-subscribe" class="subscribe-button">
+        <div class="subscribed-container" id="subscribed-container">
+          <img class="subscribed-image" src="check-mark.png"/>
+          <div class="subscribed-text">subscribed. thank you.
+          </div>
+        </div>
+    </form>
+  </div>
+  <script>
+    let url = window.location.href;
+    console.log(url);
+    if (url.includes("#subscribed")) {
+      document.getElementById("mc-embedded-subscribe").style.display = "none";
+      document.getElementById("subscribed-container").style.display = "inline-block";
+    }
+  </script>
+</body>
+</html>
