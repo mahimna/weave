@@ -110,6 +110,10 @@ html {
 }
 
 @media only screen and (max-width: 800px) {
+  html {
+    height: 100%;
+  }
+
   .weave-logo {
     width: 100%;
     display: block;
@@ -135,7 +139,27 @@ html {
   .weave-subscribe-form {
     margin-top: 50px;
     width: fit-content;
-    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: inherit;
   }
 
+  .email-input {
+    margin-left: 0px;
+  }
+
+  .subscribe-button {
+    position: inherit;
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+
+  .subscribed-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subscribed-image {
+    margin-left: 40px;
+  }
 }
