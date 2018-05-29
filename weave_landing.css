@@ -1,7 +1,7 @@
 html {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(#25293C, #2E71C1);
+  background: #25293C;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 500px;
@@ -14,12 +14,12 @@ html {
 }
 
 .weave-logo-image {
-  height: 60%;
+  height: 80%;
   position: relative;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  top: 20%;
+  margin-top: -10px;
   min-height: 200px; 
 }
 
@@ -40,7 +40,7 @@ html {
 .email-input {
   -webkit-appreance: none;
   background-color: inherit !important;
-  font-size: 25px;
+  font-size: 50px;
   position: relative;
   border: 0px;
   border-bottom: 1px solid white;
@@ -49,8 +49,9 @@ html {
   margin-left: -200px;
   width: 400px;
   display: block;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "HelveticaNeue Light","Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 100;
+  letter-spacing: 1px;
 }
 
 .email-input:focus {
@@ -60,14 +61,14 @@ html {
 
 .email-input::placeholder {
   color: white;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
 }
 
 .subscribe-button {
   margin-top: 100px;
   text-align: center;
-  border-radius: 40px;
+  border-radius: 60px;
   background-color: inherit; 
   border: 2px solid #FF40FF;
   padding: 10px;
@@ -76,15 +77,16 @@ html {
   position: relative;
   color: white;
   font-size: 14px;
-  width: 200px;
-  margin-left: -100px;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  width: 400px;
+  margin-left: -200px;
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 100;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .subscribe-button:hover {
   background-color: #FEB8FD;
+  color: #25293C;
 }
 
 .subscribed-container {
@@ -126,8 +128,8 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -10px;
     top: 0%;
-    margin-top: 20px;
   }
 
   .weave-signup {
@@ -150,7 +152,7 @@ html {
 
   .subscribe-button {
     position: inherit;
-    margin-left: 100px;
+    margin-left: auto;
     margin-top: 30px;
   }
 
