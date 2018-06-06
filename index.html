@@ -7,13 +7,13 @@
     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
   </style>
   <link href="weave_landing.css" rel="stylesheet" type="text/css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120442635-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-120442635-1', { 'optimize_id': 'GTM-PVHH75S'});
+    gtag('config', 'UA-120442635-1');
   </script>
 </head>
 <body>
@@ -40,6 +40,11 @@
     if (url.includes("#subscribed")) {
       document.getElementById("mc-embedded-subscribe").style.display = "none";
       document.getElementById("subscribed-container").style.display = "inline-block";
+
+      gtag('config', 'UA-120442635-1', {
+        'page_title' : 'subscribed',
+        'page_path': '/subscribed'
+      });
     }
   </script>
 </body>
