@@ -7,19 +7,13 @@
     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
   </style>
   <link href="weave_landing.css" rel="stylesheet" type="text/css">
-  <style>.async-hide { opacity: 0 !important} </style>
-  <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-  })(window,document.documentElement,'async-hide','dataLayer',4000,
-  {'GTM-PVHH75S':true});</script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120442635-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-120442635-1', { 'optimize_id': 'GTM-PVHH75S'});
+    gtag('config', 'UA-120442635-1');
   </script>
 </head>
 <body>
@@ -46,6 +40,11 @@
     if (url.includes("#subscribed")) {
       document.getElementById("mc-embedded-subscribe").style.display = "none";
       document.getElementById("subscribed-container").style.display = "inline-block";
+
+      gtag('config', 'UA-120442635-1', {
+        'page_title' : 'subscribed',
+        'page_path': '/subscribed'
+      });
     }
   </script>
 </body>
