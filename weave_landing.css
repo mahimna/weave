@@ -1,5 +1,8 @@
-.weave-page {
+.weave-home {
   height: 100vh;
+  background: url('background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .weave-left {
@@ -42,18 +45,19 @@
   padding-right: 30px;
   text-align: center;
   padding-top: 50px;
-  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "HelveticaNeue Light","Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  padding-bottom: 50px;
 }
 
 .weave-subscribe-form {
   width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .email-input {
   -webkit-appreance: none;
   background-color: inherit !important;
   font-size: 50px;
-  position: relative;
   border: 0px;
   border-bottom: 1px solid black;
   text-align: center;
@@ -122,11 +126,71 @@
   position: absolute;
 }
 
+.weave-page-1 {
+  height: 100vh;
+}
+
 .weave-paragraph {
   padding: 10px;
   margin-top: 15px;
   margin-bottom: 15px;
   width: 80%;
+}
+
+.weave-page-2 {
+  height: 100vh;
+  background-color: #EFEFEF;
+}
+
+.weave-picture {
+  width: 90%;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.third {
+  width: 33%;
+  display: inline-block;
+  float: left;
+  margin-top: 30px;
+}
+
+.weave-bubble {
+  width: 100%;
+}
+
+.footer-input {
+  -webkit-appreance: none;
+  background-color: inherit !important;
+  font-size: 50px;
+  border: 0px;
+  border-bottom: 1px solid black;
+  text-align: center;
+  color: white;
+  width: 100%;
+  display: block;
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "HelveticaNeue Light","Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.footer-input:focus {
+  color: black;
+  outline: 0px;
+}
+
+.footer-input::placeholder {
+  color: black;
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+.footer-text-1 {
+  text-align: right;
+}
+
+.footer-text-2 {
+  margin-top: 150px;
 }
 
 @media only screen and (max-width: 800px) {
