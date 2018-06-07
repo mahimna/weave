@@ -1,10 +1,16 @@
-html {
-  width: 100vw;
+.weave-page {
   height: 100vh;
-  background: #25293C;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 500px;
+}
+
+.weave-left {
+  width: 50%;
+  display: inline-block;
+}
+
+.weave-right {
+  width: 50%;
+  display: inline-block;
+  float: right;
 }
 
 .weave-logo {
@@ -30,11 +36,17 @@ html {
   display: inline-block;
 }
 
+.weave-header {
+  font-size: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "HelveticaNeue Light","Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
 .weave-subscribe-form {
-  position: absolute;
-  top: 40%;
   width: fit-content;
-  left: 75%;
 }
 
 .email-input {
@@ -43,24 +55,24 @@ html {
   font-size: 50px;
   position: relative;
   border: 0px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
   text-align: center;
   color: white;
-  margin-left: -200px;
   width: 400px;
   display: block;
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "HelveticaNeue Light","Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 100;
   letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 
 .email-input:focus {
-  color: white;
+  color: black;
   outline: 0px;
 }
 
 .email-input::placeholder {
-  color: white;
+  color: black;
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
 }
@@ -75,10 +87,9 @@ html {
   padding-top: 25px;
   padding-bottom: 25px;
   position: relative;
-  color: white;
+  color: black;
   font-size: 14px;
   width: 400px;
-  margin-left: -200px;
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 100;
   font-size: 40px;
@@ -109,6 +120,13 @@ html {
   font-size: 20px;
   margin-top: 20px;
   position: absolute;
+}
+
+.weave-paragraph {
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 80%;
 }
 
 @media only screen and (max-width: 800px) {

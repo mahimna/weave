@@ -22,38 +22,73 @@
     gtag('js', new Date());
     gtag('config', 'UA-120442635-1', { 'optimize_id': 'GTM-P376TP7' });
   </script>
+
+  <script src="weave_landing.js"></script>
 </head>
 <body>
-  <div class="weave-logo">
-    <!-- <img class="weave-logo-image" src="weave-logo-extended.png"/> -->
-    <img class="weave-logo-image" src="looping-logo.gif" alt="looping-logo-animation" />
-  </div>
-  <div class="weave-signup">
-    <form action="https://weavetravels.us18.list-manage.com/subscribe/post?u=775ce3f7a792be54e6a654341&amp;id=093171f7a8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="weave-subscribe-form" target="_self" novalidate>
-      <input type="email" value="" name="EMAIL" class="email-input" id="mce-EMAIL" placeholder="email address" required autocomplete="off">
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_775ce3f7a792be54e6a654341_093171f7a8" tabindex="-1" value=""></div>
-        <input type="submit" value="add to mailing list" name="subscribe" id="mc-embedded-subscribe" class="subscribe-button">
+  <div class="weave-page">
+    <div class="weave-logo">
+      <!-- <img class="weave-logo-image" src="weave-logo-extended.png"/> -->
+      <img class="weave-logo-image" src="looping-logo.gif" alt="looping-logo-animation" />
+    </div>
+    <div class="weave-signup">
+      <div class="weave-header">
+        Explore the world and plan your next travel adventures with Weave!
+      </div>
+      <a href="sample.html">Visit Sample Page</a>
+      <form method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="weave-subscribe-form" target="_self" novalidate>
+        <input type="text" value="" class="email-input" id="mce-EMAIL" placeholder="name" required>
+        <input type="email" value="" name="EMAIL" class="email-input" id="mce-EMAIL" placeholder="email address" required autocomplete="off">
+        <input type="submit" value="Start Exploring Now" name="subscribe" id="mc-embedded-subscribe" class="subscribe-button">
         <div class="subscribed-container" id="subscribed-container">
           <img class="subscribed-image" src="check-mark.png"/>
           <div class="subscribed-text">subscribed. thank you.
           </div>
         </div>
-    </form>
+        <li
+      </form>
+    </div>
   </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      let url = window.location.href;
-      if (url.includes("#subscribed")) {
+  <div class="weave-page">
+    <div class="weave-left">
+      <div class="weave-paragraph">
+        <b>Amazing content</b>
+        <div>
+          Content creators, tour companies, and some of the world's most amazing travellers use Weave to showcase their adventures around the globe.
+        </div>
+      </div>
 
-        document.getElementById("mc-embedded-subscribe").style.display = "none";
-        document.getElementById("subscribed-container").style.display = "inline-block";
+      <div class="weave-paragraph">
+        <b>For your adventures!</b>
+        <div>
+          Then, you can use Weave as a way to plan your travels. Do this with the inspiration of some incredible trip makers and tour companies.
+        </div>
+      </div>
+    </div>
+    <div class="weave-picture weave-right">
 
-        gtag('config', 'UA-120442635-1', {
-          'page_location' : window.location.href
-        });
-      }
-      });
-  </script>
+    </div>
+  </div>
+  <div class="weave-page">
+    <div class="weave-picture weave-left">
+
+    </div>
+
+    <div class="weave-right">
+      <div class="weave-paragraph">
+        <b>Organized Itineraries</b>
+        <div>
+          Creators use Weave to show their content, exactly how you will experience it. It's magical to walk through an adventure before you book it.
+        </div>
+      </div>
+
+      <div class="weave-paragraph">
+        <b>Booking</b>
+        <div>
+          Once you're excited, inspired, and ready to explore, you can use Weave to book your new adventure, and start to travel the world. 
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
