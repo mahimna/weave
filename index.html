@@ -43,16 +43,18 @@
     </form>
   </div>
   <script>
-    let url = window.location.href;
-    console.log(url);
-    if (url.includes("#subscribed")) {
-      document.getElementById("mc-embedded-subscribe").style.display = "none";
-      document.getElementById("subscribed-container").style.display = "inline-block";
+    document.addEventListener('DOMContentLoaded', function() {
+      let url = window.location.href;
+      console.log(url);
+      if (url.includes("#subscribed")) {
+        document.getElementById("mc-embedded-subscribe").style.display = "none";
+        document.getElementById("subscribed-container").style.display = "inline-block";
 
-      gtag('config', 'UA-120442635-1', {
-        'page_location' : window.location.href
+        gtag('config', 'UA-120442635-1', {
+          'page_location' : window.location.href
+        });
+      }
       });
-    }
   </script>
 </body>
 </html>
