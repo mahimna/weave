@@ -12,39 +12,31 @@ db.settings(settings);
 
 let ip = '';
 let ip_location = {};
-let subs = 0;
+let page_type = '';
+let viewer_id = '';
 
-$.get("https://ipinfo.io", function(response) {
-  ip = response.ip;
-  ip_location = {
-    city: response.city,
-    region: response.region,
-    country: response.country
-  }
-  let viewersRef = db.collection("viewers").doc(ip);
+function createViewer() {
+  $.get("https://ipinfo.io", function(response) {
+    ip = response.ip;
+    ip_location = {
+      city: response.city,
+      region: response.region,
+      country: response.country
+    }
+    let viewers = db.collection("viewers");
 
-  viewersRef.get()
-    .then((docSnapshot) => {
-      if (docSnapshot.exists) {
-        let viewerData = docSnapshot.data();
-        subs = viewerData.subscribers;
-        viewersRef.set({
-          num_views: viewerData.num_views + 1,
-          ip_location: ip_location
-        }, { merge: true }).catch((error) => {
-          console.error("Error adding document: ", error);
-        });
-      } else {
-        viewersRef.set({
-          num_views: 1,
-          ip_location: ip_location,
-          subscribers: subs
-        }, { merge: true }).catch((error) => {
-          console.error("Error adding document: ", error);
-        });
-      }
-    })
-}, "jsonp");
+    viewers.add({
+      ip: ip,
+      ip_location: ip_location,
+      created_at: new Date(),
+      page_type: page_type
+    }).then((viewerRef) => {
+      viewer_id = viewerRef.id;
+    }).catch((error) => {
+      console.error("Error adding document: ", error);
+    });
+  }, "jsonp");
+}
 
 function scrollToItem(item) {
   var diff=(item.offsetTop-window.scrollY)/8
@@ -58,6 +50,9 @@ function scrollToItem(item) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  page_type = document.getElementById("page-type").textContent;
+  createViewer();
+
   let url = window.location.href;
   if (url.includes("#subscribed")) {
 
@@ -76,22 +71,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (!email) {
       alert("Please enter an email! :)");
-    } else {
+    } else if (viewer_id) {
       let subscribers = db.collection("subscribers");
-      subscribers.add({
+      subscribers.doc(viewer_id).set({
         type: "header",
         name: name,
         email: email,
         ip: ip,
-        ip_location: ip_location
+        ip_location: ip_location,
+        page_type: page_type,
+        created_at: new Date(),
       }).then((docRef) => {
-        db.collection("viewers").doc(ip).set({
-          subscribers: subs + 1
-        }, { merge: true });
+        gtag('event', 'subscribe-click', {
+          'event_category' : 'engagement',
+          'event_label' : 'header',
+          'value' : page_type,
+        });
         window.location.href = "subscribed.html";
       }).catch((error) => {
         console.error("Error adding document: ", error);
       });
+    } else {
+      alert("Please try again :)");
     }
   });
 
@@ -102,22 +103,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (!email) {
       alert("Please enter an email! :)");
-    } else {
-      let subscribers = db.collection('subscribers');
-      subscribers.add({
+    } else if (viewer_id) {
+      let subscribers = db.collection("subscribers");
+      subscribers.doc(viewer_id).set({
         type: "footer",
         name: name,
         email: email,
         ip: ip,
-        ip_location: ip_location
+        ip_location: ip_location,
+        page_type: page_type,
+        created_at: new Date(),
       }).then((docRef) => {
-        db.collection("viewers").doc(ip).set({
-          subscribers: subs + 1
-        }, { merge: true });
+        gtag('event', 'subscribe-click', {
+          'event_category' : 'engagement',
+          'event_label' : 'header',
+          'value' : page_type,
+        });
         window.location.href = "subscribed.html";
       }).catch((error) => {
         console.error("Error adding document: ", error);
       });
+    } else {
+      alert("Please try again :)");
     }
   });
 
