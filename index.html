@@ -14,6 +14,7 @@
   })(window,document.documentElement,'async-hide','dataLayer',4000,
   {'GTM-P376TP7':true});</script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120442635-1"></script>
   <script>
@@ -22,7 +23,8 @@
     gtag('js', new Date());
     gtag('config', 'UA-120442635-1', { 'optimize_id': 'GTM-P376TP7' });
   </script>
-
+   <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
   <script src="weave_landing.js"></script>
 </head>
 <body>
@@ -36,9 +38,9 @@
         Explore the world and plan your next travel adventures with Weave!
       </div>
       <div class="weave-subscribe-form">
-        <input type="text" value="" class="email-input" id="mce-EMAIL" placeholder="name" required>
-        <input type="email" value="" name="EMAIL" class="email-input" id="mce-EMAIL" placeholder="email address" required autocomplete="off">
-        <div class="subscribe-button" id="mc-embedded-subscribe">
+        <input type="text" value="" class="email-input" id="header-form-name" placeholder="name" required>
+        <input type="email" value="" name="EMAIL" class="email-input" id="header-form-email" placeholder="email address" required autocomplete="off">
+        <div class="subscribe-button" id="header-form-subscribe">
           <div class="subscribe-button-text">
               Start Exploring Now
           </div>
