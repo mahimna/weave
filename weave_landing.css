@@ -1,10 +1,25 @@
-html {
-  width: 100vw;
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.weave-home {
   height: 100vh;
-  background: #25293C;
-  background-repeat: no-repeat;
+  background: url('background.png');
   background-size: cover;
-  min-height: 500px;
+  background-repeat: no-repeat;
+  margin-top: -10px;
+}
+
+.weave-left {
+  width: 50%;
+  display: inline-block;
+}
+
+.weave-right {
+  width: 50%;
+  display: inline-block;
+  float: right;
 }
 
 .weave-logo {
@@ -30,62 +45,85 @@ html {
   display: inline-block;
 }
 
+.weave-header {
+  font-size: 40px;
+  color: #444B6E;
+  font-family: 'Arial black', 'Lucida Grande', sans-serif; 
+  width: 450px;
+  padding-left: 110px;
+  padding-right: 30px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
 .weave-subscribe-form {
-  position: absolute;
-  top: 40%;
   width: fit-content;
-  left: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.weave-scroll-down-button {
+  background: url('down-arrow.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30px;
+  position: relative;
+  bottom: 100px;
+  left: 50%;
+  width: 60px;
+  cursor: pointer;
 }
 
 .email-input {
-  -webkit-appreance: none;
+  -webkit-appearance: none;
   background-color: inherit !important;
-  font-size: 50px;
-  position: relative;
+  font-size: 30px;
   border: 0px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #A3A3A3;
   text-align: center;
-  color: white;
-  margin-left: -200px;
-  width: 400px;
+  color: #25293C;
+  width: 100%;
   display: block;
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "HelveticaNeue Light","Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 100;
   letter-spacing: 1px;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .email-input:focus {
-  color: white;
+  color: #25293C;
   outline: 0px;
 }
 
 .email-input::placeholder {
-  color: white;
+  color: #25293C;
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
 }
 
 .subscribe-button {
-  margin-top: 100px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto; 
   text-align: center;
-  border-radius: 60px;
-  background-color: inherit; 
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6); 
   border: 2px solid #FF40FF;
   padding: 10px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   position: relative;
-  color: white;
-  font-size: 14px;
-  width: 400px;
-  margin-left: -200px;
+  color: #25293C;
+  width: 300px;
   font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 100;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .subscribe-button:hover {
-  background-color: #FEB8FD;
+  background-color: rgba(254 , 184, 253, 0.25);
   color: #25293C;
 }
 
@@ -111,11 +149,134 @@ html {
   position: absolute;
 }
 
+.weave-page-1 {
+  height: 75vh;
+}
+
+.weave-paragraph-1 {
+  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 60px;
+  width: 80%;
+  color: #25293C;
+  font-size: 30px;
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+.weave-picture-1 {
+  width: 100%;
+  margin-left: -40px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.weave-page-2 {
+  height: 75vh;
+  background-color: #EFEFEF;
+}
+
+.weave-paragraph-2 {
+  margin-left: 70px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 80%;
+  color: #25293C;
+  font-size: 30px;
+  font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+.weave-picture-2 {
+  width: 100%;
+  margin-left: 30px;
+  margin-top: 40px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.weave-page-3 {
+  height: 40vh;
+}
+
+#content-creator-info {
+  display: none;
+}
+
+.third {
+  width: 33%;
+  display: inline-block;
+  float: left;
+  margin-top: 30px;
+}
+
+.weave-bubble {
+  margin-left: 10%;
+  width: 80%;
+  padding-bottom: 15px;
+}
+
+.bubble-bottom {
+  margin-top: 10px;
+}
+
+.footer-text-1 {
+  margin-right: 0px;
+  margin-top: 10px;
+  text-align: right;
+  font-family:  "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 30px;
+}
+
+.footer-text-2 {
+  margin-left: 0px;
+  margin-right: 150px;
+  margin-top: 110px;
+  font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 30px;
+}
+
+.weave-page-4 {
+  height: 10vh;
+  background-color: #EFEFEF;
+}
+
+.weave-feature {
+  margin-left: 30%;
+  width: 40%;
+  padding-bottom: 0px;
+}
+
+.footer-text-3 {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+/*                                                                           */
+/*   //      //  //////////  /////////   //////////   //          ////////   */
+/*   ////   ///  //      //  //     ///      //       //          //         */
+/*   // //// //  //      //  //  ////        //       //          //////     */
+/*   //  //  //  //      //  //     ///      //       //          //         */
+/*   //      //  //////////  /////////   //////////   //////////  ////////   */
+/*                                                                           */
+/*///////////////////////////////////////////////////////////////////////////*/
+
 @media only screen and (max-width: 800px) {
   html {
     height: 100%;
   }
 
+  .weave-left {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .weave-right {
+    width: 100%;
+    display: inline-block;
+    float: right;
+  }
+  
   .weave-logo {
     width: 100%;
     display: block;
@@ -132,6 +293,20 @@ html {
     top: 0%;
   }
 
+  .weave-header {
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    font-size: 30px;
+    color: #444B6E;
+    font-family: 'Arial black', 'Lucida Grande', sans-serif; 
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: inherit;
+}
+
   .weave-signup {
     width: 100%;
     display: block;
@@ -146,14 +321,39 @@ html {
     position: inherit;
   }
 
+  .weave-scroll-down-button {
+    display: none;
+  }
+
   .email-input {
-    margin-left: 0px;
+    position: inherit;
+    font-size: 25px;
+    width: 100%;
+    display: block;
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "HelveticaNeue Light","Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding-top: 0px;
   }
 
   .subscribe-button {
     position: inherit;
-    margin-left: auto;
     margin-top: 30px;
+
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6); 
+    border: 2px solid #FF40FF;
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #25293C;
+    width: 200px;
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 100;
+    font-size: 20px;
   }
 
   .subscribed-container {
@@ -163,5 +363,100 @@ html {
 
   .subscribed-image {
     margin-left: 40px;
+  }
+
+  .weave-page-1 {
+    height: 100vh;
+  }
+
+  .weave-paragraph-1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    margin-top: 10%
+    width: 80%;
+    color: #25293C;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  }
+
+  .weave-picture-1 {
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 5px 5px 5px grey;
+  }
+
+  .weave-page-2 {
+    height: 100vh;
+    background-color: #EFEFEF;
+  }
+
+  .weave-paragraph-2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 80%;
+    color: #25293C;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  }
+
+  .weave-picture-2 {
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 5px 5px 5px grey;
+  }
+
+  .weave-page-3 {
+    height: 50vh;
+  }
+
+  .third {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+  }
+
+  .weave-bubble {
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .footer-text-1 {
+    text-align: center;
+    font-family:  "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 20px;
+  }
+
+  .footer-text-2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    text-align: center;
+    font-family:  "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 20px;
+  }
+
+  .weave-page-4 {
+    height: 10vh;
+  }
+
+  .weave-feature {
+    margin-left: 30%;
+    width: 40%;
+    padding-bottom: 0px;
+  }
+
+  .footer-text-3 {
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 30px;
+    margin-bottom: 40px;
   }
 }

@@ -7,7 +7,6 @@
     #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
   </style>
   <link href="weave_landing.css" rel="stylesheet" type="text/css">
-  
   <style>.async-hide { opacity: 0 !important} </style>
   <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
   h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
@@ -15,46 +14,152 @@
   })(window,document.documentElement,'async-hide','dataLayer',4000,
   {'GTM-P376TP7':true});</script>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120442635-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-120442635-1', { 'optimize_id': 'GTM-P376TP7' });
+    gtag('config', 'UA-120442635-1');
   </script>
+   <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+  <script src="weave_landing.js"></script>
 </head>
 <body>
-  <div class="weave-logo">
-    <!-- <img class="weave-logo-image" src="weave-logo-extended.png"/> -->
-    <img class="weave-logo-image" src="looping-logo.gif" alt="looping-logo-animation" />
-  </div>
-  <div class="weave-signup">
-    <form action="https://weavetravels.us18.list-manage.com/subscribe/post?u=775ce3f7a792be54e6a654341&amp;id=093171f7a8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="weave-subscribe-form" target="_self" novalidate>
-      <input type="email" value="" name="EMAIL" class="email-input" id="mce-EMAIL" placeholder="email address" required autocomplete="off">
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_775ce3f7a792be54e6a654341_093171f7a8" tabindex="-1" value=""></div>
-        <input type="submit" value="add to mailing list" name="subscribe" id="mc-embedded-subscribe" class="subscribe-button">
+  <div class="weave-home">
+    <div class="weave-logo">
+      <img class="weave-logo-image" src="logo-long.png"/>
+      <!-- <img class="weave-logo-image" src="looping-logo.gif" alt="looping-logo-animation" /> -->
+    </div>
+    <div class="weave-signup">
+      <div class="weave-header">
+        Explore the world and plan your next travel adventures with Weave!
+      </div>
+      <div class="weave-subscribe-form">
+        <input type="text" value="" class="email-input" id="header-form-name" placeholder="name" required>
+        <input type="email" value="" name="EMAIL" class="email-input" id="header-form-email" placeholder="email address" required autocomplete="off">
+        <div class="subscribe-button" id="header-form-subscribe">
+          <div class="subscribe-button-text">
+              Start Exploring Now
+          </div>
+        </div>
         <div class="subscribed-container" id="subscribed-container">
           <img class="subscribed-image" src="check-mark.png"/>
           <div class="subscribed-text">subscribed. thank you.
           </div>
         </div>
-    </form>
+      </div>
+    </div>
+    <div id="scroll-arrow" class="weave-scroll-down-button">
+    </div>
   </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      let url = window.location.href;
-      if (url.includes("#subscribed")) {
+  <div class="weave-page-1" id="page-1">
+    <div class="weave-left">
+      <div class="weave-paragraph-1">
+        <b>Amazing content</b>
+        <div>
+          Content creators, tour companies, and some of the world's most amazing travellers use Weave to showcase their adventures around the globe.
+        </div>
+      </div>
 
-        document.getElementById("mc-embedded-subscribe").style.display = "none";
-        document.getElementById("subscribed-container").style.display = "inline-block";
+      <div class="weave-paragraph-1">
+        <b>For your adventures!</b>
+        <div>
+          Then, you can use Weave as a way to plan your travels. Do this with the inspiration of some incredible trip makers and tour companies.
+        </div>
+      </div>
+    </div>
+    <div class="weave-right">
+      <img class="weave-picture-1" src="image_1.png">
+    </div>
+  </div>
+  <div class="weave-page-2">
+    <div class="weave-left">
+      <img class="weave-picture-2" src="image_2.png">
+    </div>
 
-        gtag('config', 'UA-120442635-1', {
-          'page_location' : window.location.href
-        });
-      }
-      });
-  </script>
+    <div class="weave-right">
+      <div class="weave-paragraph-2">
+        <b>Organized Itineraries</b>
+        <div>
+          Creators use Weave to show their content, exactly how you will experience it. It's magical to walk through an adventure before you book it.
+        </div>
+      </div>
+
+      <div class="weave-paragraph-2">
+        <b>Booking</b>
+        <div>
+          Once you're excited, inspired, and ready to explore, you can use Weave to book your new adventure, and start to travel the world. 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="weave-page-3">
+    <div class="third">
+      <div class="footer-text-1">
+        If you travel
+      </div>
+    </div>
+    <div class="third">
+      <img class="weave-bubble" src="bubbles.png">
+    </div>
+    <div class="third">
+      <div class="footer-text-2">
+        Weave has an adventure for you.
+      <div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="weave-page-3">
+  <input type="text" value="" class="email-input" id="footer-form-name" placeholder="name" required>
+  <input type="email" value="" name="EMAIL" class="email-input" id="footer-form-email" placeholder="email address" required autocomplete="off">
+  <div class="subscribe-button" id="footer-form-subscribe">
+    <div class="subscribe-button-text">
+        Start Exploring Now
+    </div>
+  </div>
+</div>
+<div class="weave-page-3" id="content-creator-info">
+    <div class="third">
+      <div class="footer-text-1">
+        Whether you're a...
+      </div>
+      <img class="weave-feature" src="content_creator.png">
+      <div class="footer-text-3">
+        Content Creator
+      </div>
+    </div>
+    <div class="third">
+      <img class="weave-feature" src="tour_company.png">
+      <div class="footer-text-3">
+        Tour Company
+      </div>
+    </div>
+    <div class="third">
+      <img class="weave-feature" src="travel_agency.png">
+      <div class="footer-text-3">
+        Travel Agency
+      <div>
+      <div class="footer-text-1">
+        Weave is a tool to consolidate and make your content beautiful.
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="weave-page-3" id="content-creator-info">
+  <input type="text" value="" class="email-input" id="mce-EMAIL" placeholder="name" required>
+  <input type="email" value="" name="EMAIL" class="email-input" id="mce-EMAIL" placeholder="email address" required autocomplete="off">
+  <div class="subscribe-button" id="mc-embedded-subscribe">
+    <div class="subscribe-button-text">
+        Start Creating
+    </div>
+  </div>
+</div>
+<div class="weave-page-4">
+</div>
 </body>
 </html>
