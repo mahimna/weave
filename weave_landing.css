@@ -63,6 +63,18 @@ body {
   margin-right: auto;
 }
 
+.weave-scroll-down-button {
+  background: url('down-arrow.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30px;
+  position: relative;
+  bottom: 100px;
+  left: 50%;
+  width: 60px;
+  cursor: pointer;
+}
+
 .email-input {
   -webkit-appearance: none;
   background-color: inherit !important;
@@ -152,7 +164,7 @@ body {
 }
 
 .weave-picture-1 {
-  width: 720px;
+  width: 100%;
   margin-left: -40px;
   box-shadow: 5px 5px 5px grey;
 }
@@ -173,7 +185,7 @@ body {
 }
 
 .weave-picture-2 {
-  width: 720px;
+  width: 100%;
   margin-left: 30px;
   margin-top: 40px;
   box-shadow: 5px 5px 5px grey;
@@ -309,6 +321,10 @@ body {
     position: inherit;
   }
 
+  .weave-scroll-down-button {
+    display: none;
+  }
+
   .email-input {
     position: inherit;
     font-size: 25px;
@@ -350,7 +366,7 @@ body {
   }
 
   .weave-page-1 {
-    height: 75vh;
+    height: 100vh;
   }
 
   .weave-paragraph-1 {
@@ -372,7 +388,7 @@ body {
   }
 
   .weave-page-2 {
-    height: 75vh;
+    height: 100vh;
     background-color: #EFEFEF;
   }
 

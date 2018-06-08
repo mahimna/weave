@@ -88,6 +88,7 @@ document.addEventListener('DOMContentLoaded', function() {
         db.collection("viewers").doc(ip).set({
           subscribers: subs + 1
         }, { merge: true });
+        window.location.href = "subscribed.html";
       }).catch((error) => {
         console.error("Error adding document: ", error);
       });
@@ -113,6 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
         db.collection("viewers").doc(ip).set({
           subscribers: subs + 1
         }, { merge: true });
+        window.location.href = "subscribed.html";
       }).catch((error) => {
         console.error("Error adding document: ", error);
       });

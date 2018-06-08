@@ -21,7 +21,7 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-120442635-1', { 'optimize_id': 'GTM-P376TP7' });
+    gtag('config', 'UA-120442635-1');
   </script>
    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
@@ -52,8 +52,10 @@
         </div>
       </div>
     </div>
+    <div id="scroll-arrow" class="weave-scroll-down-button">
+    </div>
   </div>
-  <div class="weave-page-1">
+  <div class="weave-page-1" id="page-1">
     <div class="weave-left">
       <div class="weave-paragraph-1">
         <b>Amazing content</b>
@@ -112,9 +114,9 @@
 </div>
 </div>
 <div class="weave-page-3">
-  <input type="text" value="" class="email-input" id="mce-EMAIL" placeholder="name" required>
-  <input type="email" value="" name="EMAIL" class="email-input" id="mce-EMAIL" placeholder="email address" required autocomplete="off">
-  <div class="subscribe-button" id="mc-embedded-subscribe">
+  <input type="text" value="" class="email-input" id="footer-form-name" placeholder="name" required>
+  <input type="email" value="" name="EMAIL" class="email-input" id="footer-form-email" placeholder="email address" required autocomplete="off">
+  <div class="subscribe-button" id="footer-form-subscribe">
     <div class="subscribe-button-text">
         Start Exploring Now
     </div>
