@@ -3,6 +3,10 @@ body {
   margin: 0;
 }
 
+#page-type {
+  display: none;
+}
+
 .weave-home {
   height: 100vh;
   background: url('background.png');
