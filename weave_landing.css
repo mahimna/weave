@@ -241,6 +241,14 @@ body {
   background-color: #EFEFEF;
 }
 
+.weave-contact {
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  text-align: center;
+  color: #5E5E5E;
+  top: 40%;
+  position: relative;
+}
+
 .weave-feature {
   margin-left: 30%;
   width: 40%;
