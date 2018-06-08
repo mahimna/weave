@@ -23,6 +23,7 @@ function createViewer() {
       region: response.region,
       country: response.country
     }
+    page_type = document.getElementById("page-type").textContent;
     let viewers = db.collection("viewers");
 
     viewers.add({
@@ -50,9 +51,6 @@ function scrollToItem(item) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  page_type = document.getElementById("page-type").textContent;
-  createViewer();
-
   let url = window.location.href;
   if (url.includes("#subscribed")) {
 
@@ -68,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const name = document.getElementById("header-form-name").value;
     const email = document.getElementById("header-form-email").value;
+    page_type = document.getElementById("page-type").textContent;
 
     if (!email) {
       alert("Please enter an email! :)");
@@ -100,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const name = document.getElementById("footer-form-name").value;
     const email = document.getElementById("footer-form-email").value;
+    page_type = document.getElementById("page-type").textContent;
 
     if (!email) {
       alert("Please enter an email! :)");
@@ -132,4 +132,5 @@ document.addEventListener('DOMContentLoaded', function() {
     scrollToItem(document.getElementById("page-1"));
   });
 
+  createViewer();
 });
