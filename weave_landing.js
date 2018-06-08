@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
           'event_label' : 'footer',
           'value' : page_type,
         });
-        // window.location.href = "subscribed.html";
+        window.location.href = "subscribed.html";
       }).catch((error) => {
         console.error("Error adding document: ", error);
       });
