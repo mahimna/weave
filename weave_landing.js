@@ -81,11 +81,14 @@ document.addEventListener('DOMContentLoaded', function() {
         page_type: page_type,
         created_at: new Date(),
       }).then((docRef) => {
+        // Google analytics event for clicking subscribe
         gtag('event', 'subscribe', {
           'event_category' : 'engagement',
           'event_label' : 'header',
           'value' : page_type,
         });
+        // Facebook analytics event for clicking subscribe
+        fbq('track', 'Lead');
         window.location.href = "subscribed.html";
       }).catch((error) => {
         console.error("Error adding document: ", error);
@@ -114,11 +117,14 @@ document.addEventListener('DOMContentLoaded', function() {
         page_type: page_type,
         created_at: new Date(),
       }).then((docRef) => {
+        // Google analytics event for clicking subscribe
         gtag('event', 'subscribe', {
           'event_category' : 'engagement',
           'event_label' : 'footer',
           'value' : page_type,
         });
+        // Facebook analytics event for clicking subscribe 
+        fbq('track', 'Lead');
         window.location.href = "subscribed.html";
       }).catch((error) => {
         console.error("Error adding document: ", error);
