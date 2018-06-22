@@ -177,7 +177,6 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 600;
     font-size: 30px;
-    margin-left: 25%
   }
 
   .explore-button:hover { 
@@ -478,6 +477,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 600;
     font-size: 30px;
+    margin-left: 25%
   }
 
   .explore-button:hover { 
