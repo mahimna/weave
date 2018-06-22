@@ -110,7 +110,7 @@ body {
     margin-bottom: 40px;
   }
 
-  .weave-contact {
+  .footer-text {
     font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     text-align: center;
     color: #5E5E5E;
@@ -177,6 +177,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 600;
     font-size: 30px;
+    margin-left: 25%
   }
 
   .explore-button:hover { 
@@ -521,7 +522,7 @@ body {
   }
 
   .subscribe-button {
-    margin-top: 60px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto; 
     text-align: center;
@@ -608,6 +609,7 @@ body {
     font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     text-align: center;
     display: block;
+    width: 75%;
     margin-right: auto;
     margin-left: auto;
   }
