@@ -107,13 +107,13 @@
   <!-- LEFT SIDE -->
     <div class="page-left">
       <!-- LOGO -->
-      <img class="weave-logo" src="Weave-logo-transparent-no-text.png"/>
+      <img class="weave-logo" src="weave-logo-transparent-no-text.png"/>
       <!-- HEADER TEXT -->
       <div class="splash-header">
         Use Weave to plan and share, incredible adventures.      
       </div>
       <!-- CALL TO ACTION -->
-      <div class="explore-button" style="margin-left: auto; margin-right: auto; width: 300px;">
+      <div class="explore-button" style="margin-left: auto; margin-right: auto; width: 300px;" id="explore-header">
         Explore
       </div>
     </div>
@@ -169,8 +169,8 @@
 
   <div class="page-short">
     <div class="explore-footer-container">
-      <input type="text" value="" class="explore-text-input" placeholder="Where in the world, excites you?" required>
-      <div class="explore-button" style="display: inline-block; width: 150px;">
+      <input type="text" value="" class="explore-text-input" placeholder="Where in the world, excites you?" id="call-to-action-input" required>
+      <div class="explore-button" style="display: inline-block; width: 150px;" id="explore-footer" >
           Explore
       </div>
     </div>
@@ -200,7 +200,27 @@
       </div>
     </div>
   </div>
-</div>
-</div>
+
+  <!-- SIGN UP FORM -->
+
+  <div class="form-background" id="signup-form">
+    <div class="form-pop">
+      <input type="text" value="" class="email-input" id="name-input" placeholder="name" required>
+      <input type="email" value="" name="EMAIL" class="email-input" id="email-input" placeholder="email address" required autocomplete="off">
+      <input type="checkbox" id="consent-checkbox" name="feature"
+             value="privacy" />
+      <label class="consent-text" for="consent-checkbox">By subscribing to our sign up list, you agree to our
+        <a href="./privacy_policy.html" target="_blank">Privacy Policy</a>
+      </label>
+      <div class="form-error" id="form-error">
+      </div>
+      <div class="subscribe-button" id="subscribe-button">
+        <div class="subscribe-button-text">
+            Start Creating
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
