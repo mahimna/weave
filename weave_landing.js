@@ -146,5 +146,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  // Function that gets called when the cross is clicked in the subsrcibe form
+  document.getElementById("close-form-pop").addEventListener("click", function() {
+    var signup_form = document.getElementById("signup-form");
+    signup_form.style.display = "none";
+    removeConsentError();
+  });
+
   createViewer();
 });

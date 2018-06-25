@@ -18,7 +18,7 @@ body {
 
   .page-home {
     height: 100vh;
-    background: url('background-blue.png');
+    background: url('jeremy-bishop-123460-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -10px;
@@ -26,8 +26,9 @@ body {
 
   .page-full {
     display: inline-block;
-    height: 75vh;
+    /*height: 75vh;*/
     background-color: #FFFFFF;
+    margin-top: 100px;
   }
 
   .page-left {
@@ -42,12 +43,12 @@ body {
   }
 
   .page-short {
-    height: 10vh;
+    height: 60px;
     background-color: #FFFFFF;
   }
 
   .page-footer {
-    height: 10vh;
+    height: 80px;
     background-color: #C7F0FF;
   }
 
@@ -55,21 +56,35 @@ body {
     width: 33%;
     display: inline-block;
     float: left;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
   }
 
 /* TEXT */
 
-  .splash-header {
+  /*.splash-header {
     margin-top: 70px;
-    font-size: 80px;
-    color: #25293C;
+    font-size: 70px;
+    color: #FFFFFF;
     font-family: 'verdana', 'Arial black', 'Lucida Grande', sans-serif; 
-    width: 750px;
+    width: 650px;
     margin-left: 20px;
     padding-right: 30px;
     text-align: left;
     margin-bottom: 100px;
+  }*/
+
+  .splash-header {
+    /*margin-top: 70px;*/
+    font-size: 5vw;
+    color: #FFFFFF;
+    font-family: 'verdana', 'Arial black', 'Lucida Grande', sans-serif; 
+    width: 100%;
+    /*min-width: 550px;*/
+    /*max-width: 730px;*/
+    /*margin-left: 20px;*/
+    /*padding-right: 30px;*/
+    text-align: center;
+    /*margin-bottom: 10vh;*/
   }
 
   .play-button-text {
@@ -84,8 +99,8 @@ body {
 
   .play-button-link {
     text-decoration: none;
-    color: #FF40FF;
-    margin-left: 104px;
+    color: #FFFFFF;
+    margin-left: 100%;
     width: 200px;
     display: inline-block;
     margin-top: 29px;
@@ -114,7 +129,7 @@ body {
     font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     text-align: center;
     color: #5E5E5E;
-    top: 40%;
+    margin-top: 30px;
     position: relative;
     text-decoration: none;
   }
@@ -132,10 +147,11 @@ body {
 /* PICTURES */
  
   .weave-logo {
-    height: 8vh;
+    height: 10vh;
     margin-left: 20px;
     margin-top: 20px;
     min-height: 40px; 
+    margin-bottom: 10vh;
   }
 
   .panel-image {
@@ -149,6 +165,7 @@ body {
     margin-left: 30%;
     width: 40%;
     margin-bottom: 50px;
+    margin-top: 40px;
   }
 
   .subscribed-image {
@@ -168,19 +185,28 @@ body {
 /* BUTTONS */
 
   .explore-button {
+    margin-top: 10vh;
+    padding: 10px;
     background-color: #FF40FF;
     box-shadow: 1px 1px 5px #25293C;
     border-radius: 1px;
-    padding: 10px;
     text-align: center;   
     color: #FFFFFF;
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 600;
     font-size: 30px;
+    width: 200px;
   }
 
   .explore-button:hover { 
     box-shadow: 0px 0px 0px #25293C;
+  }
+
+  .video-container {
+    /*height: 50%;*/
+    margin-top: 25vh;
+    margin-bottom: auto;
+    margin-right: 10%;
   }
 
   .play-button-image {
@@ -239,11 +265,24 @@ body {
     color: #25293C;
   }
 
-  .subscribed-container {
-    display: none;
-    margin-top: 30px;
-    width: 400px;
-    margin-left: -150px;
+  .blog-tab-text {
+    color: #FFFFFF;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 100;
+    font-size: 30px;
+    text-align: right;
+    margin-right: 10%;
+    margin-top: 40px;
+  }
+
+  .close-window {
+    position: absolute;
+    font-size: 50px;
+    font-weight: 100;
+    top: -10px;
+    right: 10px;
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    cursor: pointer;
   }
 
 /* SIGN-UP */
@@ -256,13 +295,15 @@ body {
     border-bottom: 1px solid #A3A3A3;
     text-align: center;
     color: #25293C;
-    width: 100%;
+    width: 60%;
     display: block;
     font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "HelveticaNeue Light","Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 100;
     letter-spacing: 1px;
     margin-bottom: 20px;
     padding-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .email-input:focus {
@@ -286,14 +327,17 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
+    background-color: #f2c1fb;
     background-color: rgb(0,0,0,0.85);
   }
 
   .form-pop {
-    background-color: white;
-    width: 50%;
-    height: 50%;
-    left: 25%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 600px;
+    height: 320px;
+    margin-right: auto;
+    margin-left: auto;
     position: relative;
     padding: 5px;
   }
@@ -301,11 +345,21 @@ body {
   .consent-text {
     color: #25293C;
     font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    text-align: center;
+    display: block;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .consent-checkbox {
+    margin-left: 50%;
   }
 
   .form-error{
     display: none;
-    background-color: red;
+    color: #FF644E;
+    text-align: center;
     font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     padding: 2px;
   }
@@ -329,7 +383,7 @@ body {
 
   .page-home {
     height: 100vh;
-    background: url('background-blue.png');
+    background: url('jeremy-bishop-123460-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -30px;
@@ -352,13 +406,14 @@ body {
   }
 
   .page-short {
-    height: 10vh;
+    height: 20vh;
     background-color: #FFFFFF;
     display: inline-block;
   }
 
   .page-footer {
-    height: 30vh;
+    height: 20vh;
+    width: 100%;
     background-color: #C7F0FF;
     display: inline-block;
   }
@@ -370,7 +425,7 @@ body {
 
 /* TEXT */
 
-  .splash-header {
+  /*.splash-header {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -381,6 +436,19 @@ body {
     padding-right: 0px;
     text-align: center;
     margin-bottom: 30px;
+  }*/
+
+  .splash-header {
+    /*margin-top: 50px;*/
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 8vw;
+    color: #FFFFFF;
+    font-family: 'verdana', 'Arial black', 'Lucida Grande', sans-serif; 
+    /*width: 250px;*/
+    /*padding-right: 0px;*/
+    /*text-align: center;*/
+    /*margin-bottom: 30px;*/
   }
 
   .play-button-text {
@@ -422,7 +490,7 @@ body {
     font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     text-align: center;
     color: #5E5E5E;
-    top: 40%;
+    margin-top: 2vh;
     position: relative;
     text-decoration: none;
   }
@@ -436,6 +504,7 @@ body {
     min-height: 40px; 
     display: block;
     padding-top: 20px;
+    margin-bottom: 5vh
   }
 
   .panel-image {
@@ -445,6 +514,7 @@ body {
   .feature-image {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
     width: 50%;
     margin-bottom: 0px;
     display: block;
@@ -467,7 +537,6 @@ body {
 /* BUTTONS */
 
   .explore-button {
-    margin-top: 60px;
     background-color: #FF40FF;
     box-shadow: 1px 1px 5px #25293C;
     border-radius: 1px;
@@ -477,11 +546,22 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 600;
     font-size: 30px;
-    margin-left: 25%
+    margin-bottom: 5vh;
+    width: 50vw;
+    margin-left: 25vw;
   }
 
   .explore-button:hover { 
     box-shadow: 0px 0px 0px #25293C;
+  }
+
+  .video-container {
+    /*height: 50%;*/
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%
   }
 
   .play-button-image {
@@ -499,7 +579,7 @@ body {
   .explore-footer-container {
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
     display: block;
   }
 
@@ -517,7 +597,8 @@ body {
     font-weight: 100;
     font-size: 18px;
     height: 50px;
-    width: 250px;
+    width: 80vw;
+    margin-left: 10vw;
     margin-top: 50px;
   }
 
@@ -582,7 +663,7 @@ body {
     font-weight: 300;
   }
 
-  .form-background {
+  /*.form-background {
     display: none;
     position: fixed;
     z-index: 1;
@@ -593,16 +674,16 @@ body {
     height: 100%;
     overflow: auto;
     background-color: rgb(0,0,0,0.85);
-  }
+  }*/
 
-  .form-pop {
+  /*.form-pop {
     background-color: white;
     width: 100%;
-    height: 50%;
+    height: 320px;
     left: 0%;
     position: relative;
     padding: 5px;
-  }
+  }*/
 
   .consent-text {
     color: #25293C;
@@ -614,13 +695,40 @@ body {
     margin-left: auto;
   }
 
+  .form-background {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /*background-color: rgb(0,0,0,0.85);*/
+    background-color: #f2c1fb;
+
+  }
+
+  .form-pop {
+    background-color: #FFFFFF;
+    /*border-radius: 20px;*/
+    width: 90%;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    padding: 5px;
+  }
+
   .consent-checkbox {
     margin-left: 50%;
   }
 
   .form-error{
     display: none;
-    background-color: red;
+    color: #FF644E;
+    text-align: center;
     font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     padding: 2px;
   }
