@@ -275,6 +275,31 @@ body {
     margin-top: 40px;
   }
 
+  .facebook-weave-group-icon {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    --size-facebook-weave-group-icon: 40px;
+    background: url('facebook-icon-grey.svg') no-repeat;
+    background-size: var(--size-facebook-weave-group-icon) var(--size-facebook-weave-group-icon);
+    height: var(--size-facebook-weave-group-icon);
+    width: var(--size-facebook-weave-group-icon);
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .facebook-weave-group-icon:hover {
+    --size-facebook-weave-group-icon: 40px;
+    background: url('facebook-icon-magenta.svg') no-repeat;
+    background-size: var(--size-facebook-weave-group-icon) var(--size-facebook-weave-group-icon);
+    height: var(--size-facebook-weave-group-icon);
+    width: var(--size-facebook-weave-group-icon);
+    border: 0px solid #FFFFFF;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+
   .close-window {
     position: absolute;
     font-size: 50px;
