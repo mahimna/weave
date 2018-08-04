@@ -18,24 +18,15 @@ body {
 
   .page-home {
     height: 100vh;
-    background: url('background-map.png');
+    background: url('jeremy-bishop-123460-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -10px;
   }
 
-  .page-features {
+  .page-full {
     display: inline-block;
-    width: 100%;
-    height: 100vh;
-    background-color: #25293C;
-    margin-top: 100px;
-  }
-
-  .page-faq {
-    display: inline-block;
-    width: 100%;
-    height: 100vh;
+    /*height: 75vh;*/
     background-color: #FFFFFF;
     margin-top: 100px;
   }
@@ -49,105 +40,89 @@ body {
     width: 50%;
     display: inline-block;
     float: right;
-  }  
+  }
 
-  .page-third {
-    display: inline-block;
-    width: 33%;
-    height: 75vh;
-    float: left;
-    background-color: #25293C;
+  .page-short {
+    height: 60px;
+    background-color: #FFFFFF;
   }
 
   .page-footer {
-    height: 60px;
-    background-color: #D6D5D5;
-    margin-top: 80px;
+    height: 80px;
+    background-color: #C7F0FF;
   }
 
-  .page-footer-third {
-    display: inline-block;
+  .page-third {
     width: 33%;
+    display: inline-block;
     float: left;
+    /*margin-top: 30px;*/
   }
 
 /* TEXT */
 
-  .splash-header {
-    margin-left: 50px;
-    font-size: 50px; /* 4vw */
-    color: #000000;
+  /*.splash-header {
+    margin-top: 70px;
+    font-size: 70px;
+    color: #FFFFFF;
     font-family: 'verdana', 'Arial black', 'Lucida Grande', sans-serif; 
+    width: 650px;
+    margin-left: 20px;
+    padding-right: 30px;
     text-align: left;
+    margin-bottom: 100px;
+  }*/
+
+  .splash-header {
+    /*margin-top: 70px;*/
+    font-size: 5vw;
+    color: #FFFFFF;
+    font-family: 'verdana', 'Arial black', 'Lucida Grande', sans-serif; 
+    width: 100%;
+    /*min-width: 550px;*/
+    /*max-width: 730px;*/
+    /*margin-left: 20px;*/
+    /*padding-right: 30px;*/
+    text-align: center;
+    /*margin-bottom: 10vh;*/
   }
 
-  .splash-description {
-    margin-top: 5vh;
-    margin-left: 50px;
-    font-size: 24px; /* 1.5vw */
-    color: #000000;
-    font-family: 'verdana', 'Arial black', 'Lucida Grande', sans-serif; 
-    width: 40%;
+  .play-button-text {
+    display: inline-block;
+    position: absolute;
     text-align: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 150px;
+  }
+
+  .play-button-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 100%;
+    width: 200px;
+    display: inline-block;
+    margin-top: 29px;
   }
 
   .feature-heading-text {
     text-align: center;
-    color: #FFFFFF;
-    margin-top: 60px;
+    margin-top: 10px;
     font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 2vw;
+    font-size: 30px;
     margin-bottom: 10px;
   }
 
-  ul.a {
-    list-style-type: circle;
-    list-style-position: outside;
-    padding: 0;
-    margin: 0;
-  }
-
-  ol.a {
-    list-style-type: lower-alpha;
-    list-style-position: outside;
-    padding: 0;
-    margin: 0;
-  }
-
   .feature-body-text {
-    text-align: left;
-    color: rgba(256, 256, 256, 0.7);
-    width: 70%;
-    font-family: 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 1.4vw;
-    margin-left: 10%;
-  }
-
-  .faq-title {
-    text-align: left;
-    color: #FF40FF;
-    font-family: 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 30px; /* 2vw */
-    margin-left: 50px;
-  }
-
-  .faq-question {
-    margin-top: 20px;
-    text-align: left;
-    color: #000000;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 24px; /* 1.5vw */
-    margin-left: 50px;
-    width: 50%;
-  }
-
-  .faq-answer {
-    text-align: left;
-    color: #5E5E5E;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 20px; /* 1.25vw */
-    margin-left: 50px;
-    width: 50%;
+    font-size: 20px;
+    margin-bottom: 40px;
   }
 
   .footer-text {
@@ -157,7 +132,6 @@ body {
     margin-top: 30px;
     position: relative;
     text-decoration: none;
-    font-size: 15px;
   }
 
   .weave-paragraph {
@@ -180,9 +154,16 @@ body {
     margin-bottom: 10vh;
   }
 
+  .panel-image {
+    margin-top: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 70vh; 
+  }
+
   .feature-image {
-    margin-left: 10%;
-    width: 80%;
+    margin-left: 30%;
+    width: 40%;
     margin-bottom: 50px;
     margin-top: 40px;
   }
@@ -203,24 +184,26 @@ body {
 
 /* BUTTONS */
 
-  .sign-up-button {
-    padding: 5px;
+  .explore-button {
+    margin-top: 10vh;
+    padding: 10px;
     background-color: #FF40FF;
     box-shadow: 1px 1px 5px #25293C;
-    border-radius: 2px;
+    border-radius: 1px;
     text-align: center;   
     color: #FFFFFF;
-    font-family: "HelveticaNeue-Light", "HelveticaNeue", "Arial", "Lucida Grande", sans-serif; 
-    font-size: 20px;
-    width: 300px;
-    margin-left: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 600;
+    font-size: 30px;
+    width: 200px;
   }
 
-  .sign-up-button:hover { 
+  .explore-button:hover { 
     box-shadow: 0px 0px 0px #25293C;
   }
 
   .video-container {
+    /*height: 50%;*/
     margin-top: 25vh;
     margin-bottom: auto;
     margin-right: 10%;
@@ -301,6 +284,7 @@ body {
     background-size: var(--size-facebook-weave-group-icon) var(--size-facebook-weave-group-icon);
     height: var(--size-facebook-weave-group-icon);
     width: var(--size-facebook-weave-group-icon);
+    border: 1px solid #FFFFFF;
     border-radius: 5px;
     cursor: pointer;
   }
@@ -311,6 +295,7 @@ body {
     background-size: var(--size-facebook-weave-group-icon) var(--size-facebook-weave-group-icon);
     height: var(--size-facebook-weave-group-icon);
     width: var(--size-facebook-weave-group-icon);
+    border: 0px solid #FFFFFF;
     border-radius: 0px;
     cursor: pointer;
   }
@@ -414,7 +399,7 @@ body {
 /*                                                                           */
 /*///////////////////////////////////////////////////////////////////////////*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   html {
     height: 100%;
   }
@@ -422,21 +407,17 @@ body {
 /* PAGES */
 
   .page-home {
+    height: 100vh;
+    background: url('jeremy-bishop-123460-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-top: -30px;
   }
 
-  .page-features {
-    display: inline;
+  .page-full {
+    display: block;
     height: 75vh;
     background-color: #FFFFFF;
-    margin-top: 30px;
-  }
-
-  .page-faq {
-    display: inline-block;
-    height: 75vh;
-    background-color: #FFFFFF;
-    margin-top: 30px;
   }
 
   .page-left {
@@ -449,124 +430,94 @@ body {
     display: block;
   }
 
+  .page-short {
+    height: 20vh;
+    background-color: #FFFFFF;
+    display: inline-block;
+  }
+
   .page-footer {
-    height: 110px;
+    height: 20vh;
     width: 100%;
-    background-color: #D6D5D5;
-    display: inherit;;
+    background-color: #C7F0FF;
+    display: inline-block;
   }
 
   .page-third {
     display: block;
     width: 100%;
-    height: 65vh;
-    background-color: #25293C;
-  }
-
-  .page-footer-third {
-    display: inline-block;
-    width: 100%;
-    float: left;
   }
 
 /* TEXT */
 
-  .splash-header {
-    margin-left: 0;
-    font-size: 25pt;
-    color: #000000;
-    font-family: 'verdana', 'Arial black', 'Lucida Grande', sans-serif;
+  /*.splash-header {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    color: #25293C;
+    font-family: 'verdana', 'Arial black', 'Lucida Grande', sans-serif; 
+    width: 250px;
+    padding-right: 0px;
     text-align: center;
+    margin-bottom: 30px;
+  }*/
+
+  .splash-header {
+    /*margin-top: 50px;*/
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 8vw;
+    color: #FFFFFF;
+    font-family: 'verdana', 'Arial black', 'Lucida Grande', sans-serif; 
+    /*width: 250px;*/
+    /*padding-right: 0px;*/
+    /*text-align: center;*/
+    /*margin-bottom: 30px;*/
   }
 
-  .splash-description {
-    margin-top: 5vh;
-    margin-left: 10%;
-    font-size: 10pt;
-    color: #000000;
-    font-family: 'verdana', 'Arial black', 'Lucida Grande', sans-serif;
-    width: 80%;
-    text-align: center;
+  .play-button-text {
+    display: block;
+    position: relative;
+    margin-top: 60px;
+    text-align: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-right: 50%;
+  }
+
+  .play-button-link {
+    text-decoration: none;
+    color: #FF40FF;
   }
 
   .feature-heading-text {
     text-align: center;
-    color: #FFFFFF;
-    margin-top: 30px;
+    margin-top: 10px;
     font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 15pt;
+    font-size: 30px;
     margin-bottom: 10px;
   }
 
-  ul.a {
-    list-style-type: circle;
-    list-style-position: outside;
-    padding: 0;
-    margin: 0;
-  }
-
-  ol.a {
-    list-style-type: lower-alpha;
-    list-style-position: outside;
-    padding: 0;
-    margin: 0;
-  }
-
   .feature-body-text {
-    text-align: left;
-    color: rgba(256, 256, 256, 0.7);
-    width: 70%;
-    font-family: 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 10pt;
-    margin-left: 0;
-    display: none;
-  }
-
-  .faq-title {
-    text-align: left;
-    color: #FF40FF;
-    font-family: 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 15pt;
-    margin-left: 20px;
-  }
-
-  .faq-question {
-    margin-top: 20px;
-    text-align: left;
-    color: #000000;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 10pt;
-    margin-left: 20px;
-    width: 80%;
-  }
-
-  .faq-answer {
-    text-align: left;
-    color: #5E5E5E;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 7pt;
-    margin-left: 20px;
-    width: 80%;
+    font-size: 20px;
+    margin-bottom: 0px;
   }
 
   .footer-text {
     font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     text-align: center;
     color: #5E5E5E;
-    margin-top: 15px;
+    margin-top: 2vh;
     position: relative;
     text-decoration: none;
-    font-size: 15px;
-  }
-
-  .weave-paragraph {
-    margin-left: 30px;
-    margin-top: 15px;
-    margin-bottom: 60px;
-    width: 80%;
-    color: #25293C;
-    font-size: 30px;
-    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   }
 
 /* PICTURES */
@@ -581,11 +532,15 @@ body {
     margin-bottom: 5vh
   }
 
+  .panel-image {
+    display: none;
+  }
+
   .feature-image {
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-    width: 100%;
+    width: 50%;
     margin-bottom: 0px;
     display: block;
   }
@@ -606,26 +561,27 @@ body {
 
 /* BUTTONS */
 
-  .sign-up-button {
-    padding: 5px;
+  .explore-button {
     background-color: #FF40FF;
     box-shadow: 1px 1px 5px #25293C;
-    border-radius: 2px;
+    border-radius: 1px;
+    padding: 10px;
     text-align: center;   
     color: #FFFFFF;
-    font-family: "HelveticaNeue-Light", "HelveticaNeue", "Arial", "Lucida Grande", sans-serif; 
-    font-size: 20px;
-
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 600;
+    font-size: 30px;
     margin-bottom: 5vh;
-    width: 80vw;
-    margin-left: 9vw;
+    width: 50vw;
+    margin-left: 25vw;
   }
 
-  .sign-up-button:hover { 
+  .explore-button:hover { 
     box-shadow: 0px 0px 0px #25293C;
   }
 
   .video-container {
+    /*height: 50%;*/
     margin-top: 5vh;
     margin-bottom: 5vh;
     margin-right: auto;
