@@ -75,7 +75,7 @@ body {
 
   .splash-header {
     margin-left: 50px;
-    font-size: 4vw;
+    font-size: 50px; /* 4vw */
     color: #000000;
     font-family: 'verdana', 'Arial black', 'Lucida Grande', sans-serif; 
     text-align: left;
@@ -84,7 +84,7 @@ body {
   .splash-description {
     margin-top: 5vh;
     margin-left: 50px;
-    font-size: 1.5vw;
+    font-size: 24px; /* 1.5vw */
     color: #000000;
     font-family: 'verdana', 'Arial black', 'Lucida Grande', sans-serif; 
     width: 40%;
@@ -127,7 +127,7 @@ body {
     text-align: left;
     color: #FF40FF;
     font-family: 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 2vw;
+    font-size: 30px; /* 2vw */
     margin-left: 50px;
   }
 
@@ -136,7 +136,7 @@ body {
     text-align: left;
     color: #000000;
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 1.5vw;
+    font-size: 24px; /* 1.5vw */
     margin-left: 50px;
     width: 50%;
   }
@@ -145,7 +145,7 @@ body {
     text-align: left;
     color: #5E5E5E;
     font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 1.25vw;
+    font-size: 20px; /* 1.25vw */
     margin-left: 50px;
     width: 50%;
   }
