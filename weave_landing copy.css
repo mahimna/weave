@@ -38,40 +38,15 @@ body {
     margin-top: -10px;
   }
 
-  .page-left-beautiful {
-    width: 40%;
-    display: inline-block;
-  }
-
-  .page-right-beautiful {
-    width: 60%;
-    display: inline-block;
-    float: right;
-  }
-
-  .page-left-mobile {
+  .page-left {
     width: 50%;
     display: inline-block;
   }
 
-  .page-right-mobile {
+  .page-right {
     width: 50%;
     display: inline-block;
     float: right;
-  }
-
-  .page-left-faq {
-    width: 50%;
-    display: inline-block;
-  }
-
-  .page-right-faq {
-    width: 40%;
-    display: inline-block;
-    float: right;
-    background-color: #E472E4; 
-    height: 100vh; 
-    box-shadow: -4px 0px 12px #444444;
   }  
 
   .page-third {
@@ -79,12 +54,13 @@ body {
     width: 33%;
     height: 75vh;
     float: left;
+    /*background-color: #25293C;*/
   }
 
   .page-footer {
-    height: 120px;
-    background-color: #EFEFEF;
-    border-top: 1px solid #D5D5D5;
+    height: 60px;
+    background-color: #D6D5D5;
+    margin-top: 80px;
   }
 
   .page-footer-third {
@@ -94,114 +70,68 @@ body {
   }
 
 /* TEXT */
-  
-  .nav-container {
-    float: right;
-    position: absolute;
-    top: 18px;
-    right: 150px;
-  }
-
-  .nav-text {
-    position: relative;
-    display: inline-block;
-    margin-right: 30px;
-    font-size: 16px;
-    color: #5E5E5E;
-    font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  }
-
-  .nav-text:hover {
-    color: #444444;
-    top: -1px;
-  }
-
-  .splash-intro {
-    margin-top: 2vh;
-    margin-bottom: 3vh;
-    margin-left: 80px;
-    font-size: 24px;
-    color: #444444;
-    font-family: 'Arial Rounded MT Bold', 'verdana', 'Arial black', 'Lucida Grande', sans-serif; 
-    text-align: left;
-  }
 
   .splash-header {
     margin-left: 50px;
-    font-size: 36pt; /* 4vw */
+    font-size: 40pt; /* 4vw */
     color: rgba(228, 114, 228, 1);
     font-family: 'Arial Rounded MT Bold', 'verdana', 'Arial black', 'Lucida Grande', sans-serif; 
     text-align: left;
     background-color: rgba(228, 114, 228, 0.20);
-    width: 610px;
+    width: 700px;
     height: 42pt;
   }
 
   .splash-description {
-    margin-top: 32px;
-    margin-bottom: 10px;
-    margin-left: 80px;
-    height: 26px;
+    margin-top: 5vh;
+    margin-left: 50px;
     font-size: 24px; /* 1.5vw */
-    color: #444444;
+    color: #000000;
     font-family: 'Arial Rounded MT Bold', 'verdana', 'Arial black', 'Lucida Grande', sans-serif; 
+    width: 40%;
     text-align: left;
   }
 
-  .splash-description:hover {
-    margin-top: 32px;
-    margin-bottom: 10px;
-    margin-left: 81px;
-    height: 26px;
-    font-size: 25px; /* 1.5vw */
-    color: #111111;
-  }
-
-  .feature-title-beautiful {
-    text-align: left;
-    color: #FFFFFF;
+  .feature-heading-text {
+    color: #000000;
     font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 30pt;
     margin-top: 200px;
     margin-bottom: 10px;
-    margin-left: 100px;
+    margin-left: 50px;
     left: 50px;
     width: 300px;
   }
 
-  .feature-title-3 {
-    text-align: center; 
-    color: #111111;
-    font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 18pt;
-    margin-top: 4vh;
-    margin-bottom: 10px;
-    margin-left: 50px;
-    left: 10%;
-    width: 80%;
-    height: 160px;
+  ul.a {
+    list-style-type: circle;
+    list-style-position: outside;
+    padding: 0;
+    margin: 0;
   }
 
-  .feature-title-mobile {
-    position: relative;
-    text-align: left; 
-    color: #111111;
-    font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 24pt;
-    margin-left: 50px;
-    left: 50px;
-    width: 600px;
-    padding-top: 80px;
+  ol.a {
+    list-style-type: lower-alpha;
+    list-style-position: outside;
+    padding: 0;
+    margin: 0;
+  }
+
+  .feature-body-text {
+    text-align: left;
+    color: #000000;
+    width: 70%;
+    font-family: 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 1.4vw;
+    margin-left: 10%;
   }
 
   .faq-title {
-    position: relative;
     text-align: left;
     color: #FF40FF;
     font-family: 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-size: 30px; /* 2vw */
-    margin-left: 100px;
-    margin-top: 30px;
+    margin-left: 50px;
   }
 
   .faq-question {
@@ -210,8 +140,8 @@ body {
     color: #000000;
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-size: 24px; /* 1.5vw */
-    margin-left: 100px;
-    width: 100%;
+    margin-left: 50px;
+    width: 50%;
   }
 
   .faq-answer {
@@ -219,37 +149,18 @@ body {
     color: #5E5E5E;
     font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-size: 20px; /* 1.25vw */
-    margin-left: 100px;
-    width: 100%;
-  }
-
-  .footer-text-container {
-    margin-top: 10px;
+    margin-left: 50px;
+    width: 50%;
   }
 
   .footer-text {
     font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    text-align: left;
-    margin-left: 50px;
+    text-align: center;
     color: #5E5E5E;
-    margin-top: 10px;
+    margin-top: 30px;
     position: relative;
     text-decoration: none;
-    font-size: 14px;
-  }
-
-  .footer-text:hover {
-    color: #111111;
-  }
-
-  .subscribed-text {
-    color: #88FA4E;
-    display: inline-block;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-weight: 100;
-    font-size: 20px;
-    margin-top: 20px;
-    position: absolute;
+    font-size: 15px;
   }
 
 /* PICTURES */
@@ -259,44 +170,28 @@ body {
     margin-left: 20px;
     margin-top: 20px;
     min-height: 40px; 
-    margin-bottom: 5vh;
-  }
-
-  .ui-image {
-    width: 90%;
-    margin-top: 160px;
-    border-radius: 5px;
-    box-shadow: 4px 4px 12px #444444;
-  }
-
-  .mobile-ui-image {
-    width: 45%;
-    margin-top: 80px;
-    margin-left: 25%;
+    margin-bottom: 10vh;
   }
 
   .feature-image {
-    margin-left: 20%;
-    width: 60%;
-    margin-top: 4vh;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 50px;
+    margin-top: 40px;
   }
 
   .subscribed-image {
     height: 60px;
     margin-right: 20px;
   }
-
-  .pricing-block {
-    width: 50%;
-    height: 150px;
-    background-color: #EEEEEE;
+  .subscribed-text {
+    color: #88FA4E;
+    display: inline-block;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    color: #000000;
-    font-size: 24pt;
-    margin-top: 60px;
-    margin-left: 25%;
-    border-radius: 10px;
-    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 20px;
+    position: absolute;
   }
 
 /* BUTTONS */
@@ -312,7 +207,7 @@ body {
     font-family: "HelveticaNeue-Light", "HelveticaNeue", "Arial", "Lucida Grande", sans-serif; 
     font-size: 20px;
     width: 200px;
-    margin-left: 150px;
+    margin-left: 50px;
   }
 
   .button:hover { 
@@ -331,7 +226,7 @@ body {
     font-family: "HelveticaNeue-Light", "HelveticaNeue", "Arial", "Lucida Grande", sans-serif; 
     font-size: 20px;
     width: 200px;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-right: 50px;
     margin-top: 50px;
   }
@@ -418,10 +313,10 @@ body {
 
   .facebook-weave-group-icon {
     position: absolute;
-    top: 16px;
-    right: 290px;
+    top: 10px;
+    right: 175px;
     cursor: pointer;
-    --size-facebook-weave-group-icon: 24px;
+    --size-facebook-weave-group-icon: 30px;
     background-size: var(--size-facebook-weave-group-icon) var(--size-facebook-weave-group-icon);
     height: var(--size-facebook-weave-group-icon);
     width: var(--size-facebook-weave-group-icon);
@@ -429,25 +324,7 @@ body {
   }
 
   .facebook-weave-group-icon:hover {
-    background-size: var(--size-facebook-weave-group-icon) var(--size-facebook-weave-group-icon);
-    height: var(--size-facebook-weave-group-icon);
-    width: var(--size-facebook-weave-group-icon);
-    background: url('facebook-logo-f-magenta.svg') no-repeat;
-  }
-
-  .facebook-weave-group-icon-footer {
-    margin-left: 50px;
-    margin-top: 20px;
-    position: relative;
-    cursor: pointer;
-    --size-facebook-weave-group-icon: 24px;
-    background-size: var(--size-facebook-weave-group-icon) var(--size-facebook-weave-group-icon);
-    height: var(--size-facebook-weave-group-icon);
-    width: var(--size-facebook-weave-group-icon);
-    background: url('facebook-logo-f-grey.svg') no-repeat;
-  }
-
-  .facebook-weave-group-icon-footer:hover {
+    --size-facebook-weave-group-icon: 30px;
     background-size: var(--size-facebook-weave-group-icon) var(--size-facebook-weave-group-icon);
     height: var(--size-facebook-weave-group-icon);
     width: var(--size-facebook-weave-group-icon);
@@ -561,23 +438,21 @@ body {
 /* PAGES */
 
   .page-home {
-    margin-top: 0px;
+    margin-top: -30px;
   }
 
-  .page-full {
-    display: inline-block;
-    width: 100%;
-    height: auto;
+  .page-features {
+    display: inline;
+    height: 75vh;
+    background-color: #FFFFFF;
+    margin-top: 30px;
   }
 
-  .page-mobile-feature {
+  .page-faq {
     display: inline-block;
-    height: 120vh;
-    width: 100%;
-    background: url('background-outlook.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: -10px;
+    height: 75vh;
+    background-color: #FFFFFF;
+    margin-top: 30px;
   }
 
   .page-left {
@@ -590,50 +465,18 @@ body {
     display: block;
   }
 
-  .page-left-beautiful {
+  .page-footer {
+    height: 110px;
     width: 100%;
-    display: block;
+    background-color: #D6D5D5;
+    display: inherit;;
   }
-
-  .page-right-beautiful {
-    width: 100%;
-    display: block;
-  }
-
-  .page-left-mobile {
-    width: 100%;
-    display: block;
-  }
-
-  .page-right-mobile {
-    width: 100%;
-    display: block;
-  }
-
-  .page-left-faq {
-    width: 100%;
-    display: block;
-  }
-
-  .page-right-faq {
-    width: 100%;
-    display: block;
-    background-color: #E472E4; 
-    height: 10px; 
-    box-shadow: 0px 0px 0px #444444;
-  } 
 
   .page-third {
-    display: inline-block;
+    display: block;
     width: 100%;
-    height: auto;
-    float: left;
-  }
-
-  .page-footer {
-    height: 240px;
-    background-color: #EFEFEF;
-    border-top: 0px solid #D5D5D5;
+    height: 65vh;
+    background-color: #25293C;
   }
 
   .page-footer-third {
@@ -644,101 +487,65 @@ body {
 
 /* TEXT */
 
-  .nav-container {
-    float: right;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-  }
-
-  .nav-text {
-    position: relative;
-    display: block;
-    margin-right: 0px;
-    text-align: right;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #5E5E5E;
-    font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  }
-
-  .splash-intro {
-    margin-top: 0vh;
-    margin-bottom: 4vh;
-    margin-left: 5%;
-    font-size: 26px;
-    color: #444444;
-    font-family: 'Arial Rounded MT Bold', 'verdana', 'Arial black', 'Lucida Grande', sans-serif;
-    text-align: left;
-  }
-
   .splash-header {
     margin-left: 0;
-    font-size: 32px;
-    color: rgba(228, 114, 228, 1);
-    font-family: 'Arial Rounded MT Bold', 'verdana', 'Arial black', 'Lucida Grande', sans-serif;
+    font-size: 25pt;
+    color: #000000;
+    font-family: 'verdana', 'Arial black', 'Lucida Grande', sans-serif;
     text-align: center;
-    background-color: rgba(228, 114, 228, 0.20);
-    width: 100%;
-    height: auto;
   }
 
   .splash-description {
-    margin-top: 26px;
-    margin-bottom: 8px;
-    margin-left: 0px;
-    height: 26px;
-    font-size: 26px;
-    color: #444444;
-    font-family: 'Arial Rounded MT Bold', 'verdana', 'Arial black', 'Lucida Grande', sans-serif;
+    margin-top: 5vh;
+    margin-left: 10%;
+    font-size: 10pt;
+    color: #000000;
+    font-family: 'verdana', 'Arial black', 'Lucida Grande', sans-serif;
+    width: 80%;
     text-align: center;
   }
 
-  .feature-title-beautiful {
-    text-align: center;
+  .feature-heading-text {
     color: #FFFFFF;
     font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 22pt;
-    margin-top: 60px;
-    margin-bottom: 35px;
-    margin-left: 5%;
-    left: 0;
-    width: 90%;
+    font-size: 30pt;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    left: 50px;
+    width: 300px;
   }
 
-  .feature-title-3 {
-    text-align: center;
-    color: #111111;
-    font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 22pt;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: 5%;
-    left: 0;
-    width: 90%;
-    height: auto;
+  ul.a {
+    list-style-type: circle;
+    list-style-position: outside;
+    padding: 0;
+    margin: 0;
   }
 
-  .feature-title-mobile {
-    position: relative;
-    text-align: center;
-    color: #111111;
-    font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 14pt;
-    margin-left: 5%;
-    left: 0px;
-    width: 90%;
-    padding-top: 20px;
+  ol.a {
+    list-style-type: lower-alpha;
+    list-style-position: outside;
+    padding: 0;
+    margin: 0;
+  }
+
+  .feature-body-text {
+    text-align: left;
+    color: rgba(256, 256, 256, 0.7);
+    width: 70%;
+    font-family: 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 10pt;
+    margin-left: 0;
+    display: none;
   }
 
   .faq-title {
-    position: relative;
     text-align: left;
     color: #FF40FF;
     font-family: 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 30px; /* 2vw */
-    margin-left: 5%;
-    margin-top: 20px;
+    font-size: 15pt;
+    margin-left: 20px;
   }
 
   .faq-question {
@@ -746,40 +553,65 @@ body {
     text-align: left;
     color: #000000;
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 16px; /* 1.5vw */
-    margin-left: 5%;
-    width: 90%;
+    font-size: 10pt;
+    margin-left: 20px;
+    width: 80%;
   }
 
   .faq-answer {
     text-align: left;
     color: #5E5E5E;
     font-family: "HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 14px; /* 1.25vw */
-    margin-left: 5%;
+    font-size: 7pt;
+    margin-left: 20px;
     width: 80%;
-  }
-
-  .footer-text-container {
-    margin-top: 10px;
   }
 
   .footer-text {
     font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    text-align: left;
-    margin-left: 5%;
+    text-align: center;
     color: #5E5E5E;
-    margin-top: 10px;
+    margin-top: 15px;
     position: relative;
     text-decoration: none;
-    font-size: 14px;
-    width: 90%;
+    font-size: 15px;
   }
 
-  .footer-text:hover {
-    color: #111111;
+  .weave-paragraph {
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    width: 80%;
+    color: #25293C;
+    font-size: 30px;
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   }
 
+/* PICTURES */
+ 
+  .weave-logo {
+    height: 12vh;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 40px; 
+    display: block;
+    padding-top: 20px;
+    margin-bottom: 5vh
+  }
+
+  .feature-image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 100%;
+    margin-bottom: 0px;
+    display: block;
+  }
+
+  .subscribed-image {
+    height: 60px;
+    margin-right: 20px;
+  }
   .subscribed-text {
     color: #88FA4E;
     display: inline-block;
@@ -790,122 +622,52 @@ body {
     position: absolute;
   }
 
-/* PICTURES */
- 
-  .weave-logo {
-    height: 40px;
-    margin-left: 5%;
-    margin-top: 20px;
-    min-height: 40px;
-    margin-bottom: 5vh;
-  }
-
-  .ui-image {
-    width: 100%;
-    margin-top: 90px;
-    margin-bottom: 100px;
-    border-radius: 0px;
-    box-shadow: 0px 0px 0px #444444;
-  }
-
-  .mobile-ui-image {
-    height: auto;
-    width: 70%;
-    margin-top: 3vh;
-    margin-left: 15%;
-  }
-
-  .feature-image {
-    margin-left: 10%;
-    width: 80%;
-    margin-top: 0vh;
-    margin-bottom: 40px;
-  }
-
-  .subscribed-image {
-    height: 60px;
-    margin-right: 20px;
-  }
-
-  .pricing-block {
-    width: 50%;
-    height: 150px;
-    background-color: #EEEEEE;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    color: #000000;
-    font-size: 24pt;
-    margin-top: 60px;
-    margin-left: 25%;
-    border-radius: 10px;
-    text-align: center;
-  }
-
 /* BUTTONS */
 
   .button {
-    display: block;
-    padding: 10px;
-    background-color: #FFFFFF;
-    border: 1px solid #E472E4;
-    border-radius: 40px;
-    text-align: center;
-    color: #E472E4;
-    font-family: "HelveticaNeue-Light", "HelveticaNeue", "Arial", "Lucida Grande", sans-serif;
-    font-size: 26px;
-    width: 80%;
-    margin-left: 10%;
-    margin-bottom: 40px;
+    padding: 5px;
+    background-color: #FF40FF;
+    box-shadow: 1px 1px 5px #25293C;
+    border-radius: 2px;
+    text-align: center;   
+    color: #FFFFFF;
+    font-family: "HelveticaNeue-Light", "HelveticaNeue", "Arial", "Lucida Grande", sans-serif; 
+    font-size: 20px;
+
+    margin-bottom: 5vh;
+    width: 80vw;
+    margin-left: 9vw;
   }
 
   .button:hover { 
-    color: #FFFFFF;
-    background-color: #E472E4;
+    box-shadow: 0px 0px 0px #25293C;
   }
 
-  .button-white {
-    display: inline-block;
-    padding: 10px;
-    background-color: #E472E4;
-    border: 1px solid #FFFFFF;
-    border-radius: 40px;
-    text-align: center;   
-    color: #FFFFFF;
-    font-family: "HelveticaNeue-Light", "HelveticaNeue", "Arial", "Lucida Grande", sans-serif; 
-    font-size: 28px;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 0px;
-    margin-top: 50px;
+  .video-container {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%
   }
 
-  .button-white:hover { 
-    color: #E472E4;
-    background-color: #FFFFFF;
-  }
-
-  .contact-button {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    padding: 7px;
-    background-color: #FFFFFF;
-    border: 1px solid #E472E4;
-    border-radius: 40px;
-    text-align: center;   
-    color: #E472E4;
-    font-family: "HelveticaNeue-Light", "HelveticaNeue", "Arial", "Lucida Grande", sans-serif; 
-    font-size: 16px;
-  }
-
-  .contact-button:hover { 
-    color: #FFFFFF;
-    background-color: #E472E4;
+  .play-button-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    background: url(play-button.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
   }
 
   .explore-footer-container {
     margin-left: auto;
     margin-right: auto;
-    width: fit-content;
+    width: 100%;
+    display: block;
   }
 
   .explore-text-input {
@@ -914,18 +676,21 @@ body {
     border-left-color: #25293C;
     border-top-color: #25293C;
     border-bottom-color: #25293C;
+    border-right-color: #25293C;
     color: #25293C;
-    padding-left: 10px;
+    padding-left: 0px;
+    text-align: center;
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 100;
-    font-size: 24px;
+    font-size: 18px;
     height: 50px;
-    width: 350px;
-    margin-right: -5px;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 50px;
   }
 
   .subscribe-button {
-    margin-top: 60px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto; 
     text-align: center;
@@ -937,10 +702,10 @@ body {
     padding-bottom: 20px;
     position: relative;
     color: #25293C;
-    width: 300px;
+    width: 200px;
     font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
     font-weight: 100;
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .subscribe-button:hover {
@@ -948,62 +713,11 @@ body {
     color: #25293C;
   }
 
-  .blog-tab-text {
-    color: #FFFFFF;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-weight: 100;
-    font-size: 30px;
-    text-align: right;
-    margin-right: 10%;
-    margin-top: 40px;
-  }
-
-  .facebook-weave-group-icon {
-    position: absolute;
-    top: 16px;
-    right: 290px;
-    cursor: pointer;
-    --size-facebook-weave-group-icon: 24px;
-    background-size: var(--size-facebook-weave-group-icon) var(--size-facebook-weave-group-icon);
-    height: var(--size-facebook-weave-group-icon);
-    width: var(--size-facebook-weave-group-icon);
-    background: url('facebook-logo-f-grey.svg') no-repeat;
-  }
-
-  .facebook-weave-group-icon:hover {
-    background-size: var(--size-facebook-weave-group-icon) var(--size-facebook-weave-group-icon);
-    height: var(--size-facebook-weave-group-icon);
-    width: var(--size-facebook-weave-group-icon);
-    background: url('facebook-logo-f-magenta.svg') no-repeat;
-  }
-
-  .facebook-weave-group-icon-footer {
-    margin-left: 5%;
-    margin-top: 20px;
-    position: relative;
-    cursor: pointer;
-    --size-facebook-weave-group-icon: 24px;
-    background-size: var(--size-facebook-weave-group-icon) var(--size-facebook-weave-group-icon);
-    height: var(--size-facebook-weave-group-icon);
-    width: var(--size-facebook-weave-group-icon);
-    background: url('facebook-logo-f-grey.svg') no-repeat;
-  }
-
-  .facebook-weave-group-icon-footer:hover {
-    background-size: var(--size-facebook-weave-group-icon) var(--size-facebook-weave-group-icon);
-    height: var(--size-facebook-weave-group-icon);
-    width: var(--size-facebook-weave-group-icon);
-    background: url('facebook-logo-f-magenta.svg') no-repeat;
-  }
-
-  .close-window {
-    position: absolute;
-    font-size: 50px;
-    font-weight: 100;
-    top: -10px;
-    right: 10px;
-    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    cursor: pointer;
+  .subscribed-container {
+    display: none;
+    margin-top: 30px;
+    width: 400px;
+    margin-left: -150px;
   }
 
 /* SIGN-UP */
