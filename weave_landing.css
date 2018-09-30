@@ -114,6 +114,31 @@ body {
   .nav-text:hover {
     color: #444444;
     top: -1px;
+    cursor: pointer;
+  }
+
+  .nav-text-ref {
+    color: inherit;
+  }
+
+  .nav-text-ref:hover {
+    cursor: pointer;
+  }
+
+  .nav-text-ref:link {
+    text-decoration: none;
+  }
+
+  .nav-text-ref:visited {
+    text-decoration: none;
+  }
+
+  .nav-text-ref:hover {
+    text-decoration: none;
+  }
+
+  .nav-text-ref:active {
+    text-decoration: none;
   }
 
   .splash-intro {
