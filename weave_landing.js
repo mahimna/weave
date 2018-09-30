@@ -153,5 +153,19 @@ document.addEventListener('DOMContentLoaded', function() {
     removeConsentError();
   });
 
+  // Function that gets called when the FAQ button is clicked in the navigation
+  document.getElementById("faq-nav-item").addEventListener("click", function() {
+    $('html, body').animate({
+      scrollTop: $("div#page-faq").offset().top
+    }, 1000);
+  });
+
+  // Function that gets called when the Return to Top link is clicked in the footer
+  document.getElementById("return-to-top-link").addEventListener("click", function() {
+    $('html, body').animate({
+      scrollTop: $("div#page-home").offset().top
+    }, 1000);
+  });
+
   createViewer();
 });
