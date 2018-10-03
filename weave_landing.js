@@ -63,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const name = document.getElementById("name-input").value;
     const email = document.getElementById("email-input").value;
-    const call_to_action = document.getElementById("call-to-action-input").value;
     page_type = document.getElementById("page-type").textContent;
 
     // Only proceed if consent is given by the user
@@ -82,7 +81,6 @@ document.addEventListener('DOMContentLoaded', function() {
           created_at: new Date(),
           consent_given: true,
           consent_given_time: consent_given_time,
-          call_to_action: call_to_action,
         }).then((docRef) => {
           // Google analytics event for clicking subscribe
           gtag('event', 'subscribe', {
