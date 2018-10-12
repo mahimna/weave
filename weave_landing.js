@@ -118,6 +118,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  // Function that gets called when the middle page explore button is clicked. It sets the pop up form to be visible. 
+  document.getElementById("explore-middle").addEventListener("click", function(){
+
+    click_type = "middle";
+    var signup_form = document.getElementById("signup-form");
+    signup_form.style.display = "inherit";
+
+    // If user click outsides modal, then hide the sign up form
+    window.onclick = function(event) {
+      if (event.target == signup_form) {
+        signup_form.style.display = "none";
+        removeConsentError();
+      }
+    }
+  });
+
   // Function that gets called when the footer explore button is clicked. It sets the pop up form to be visible. 
   document.getElementById("explore-footer").addEventListener("click", function(){
 
