@@ -1,23 +1,19 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:fb="http://ogp.me/ns/fb#">
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Mon Jan 07 2019 21:13:38 GMT+0000 (UTC)  -->
+<html data-wf-page="5c327199cb585f6dfc46a0f1" data-wf-site="5c327199cb585fafeb46a0f0">
 <head>
-  <!--   <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:description" content="Your travel content hub!"/>
-  <meta property="og:image" content="http://www.weavetravels.com/weave-logo-coloured.png" />
-  <meta name="p:domain_verify" content="c263bf53658cb6f7924b824f51b6f7f8"/>
-  <style type="text/css">
-    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-  </style>
-  <link href="weave_landing.css" rel="stylesheet" type="text/css">
-
-  <style>.async-hide { opacity: 0 !important} </style>
-  <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-  h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-  (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-  })(window,document.documentElement,'async-hide','dataLayer',4000,
-  {'GTM-PXWRKZM':true});</script>
+  <meta charset="utf-8">
+  <title>Weave Travels</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/landing-v5-0-edf24acc5560f8542d6a6655dc.webflow.css" rel="stylesheet" type="text/css">
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="http://www.weavetravels.com/weave-logo-transparent-no-text.png" rel="shortcut icon" type="image/x-icon">
+  <link href="http://www.weavetravels.com/weave-logo-transparent-no-text.png" rel="apple-touch-icon">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script type="text/plain" class="_iub_cs_activate" async src="https://www.googletagmanager.com/gtag/js?id=UA-120583285-1"></script>
@@ -25,9 +21,9 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-120583285-1', { 'optimize_id': 'GTM-PXWRKZM'});
   </script>
+  <!-- End Global site tag (gtag.js) - Google Analytics -->
 
   <!-- Facebook Pixel Code -->
   <script>
@@ -51,44 +47,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
   <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+  <!-- End Getting other required scripts: JQuery, Firebase, Firebase Firestore -->
 
-  <!-- Loading the Javascript code for the landing page -->
-  <script src="weave_landing.js"></script>
-  
-  <script>
-    "use strict";
-
-    !function() {
-      var t = window.driftt = window.drift = window.driftt || [];
-      if (!t.init) {
-        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-        t.factory = function(e) {
-          return function() {
-            var n = Array.prototype.slice.call(arguments);
-            return n.unshift(e), t.push(n), t;
-          };
-        }, t.methods.forEach(function(e) {
-          t[e] = t.factory(e);
-        }), t.load = function(t) {
-          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-          var i = document.getElementsByTagName("script")[0];
-          i.parentNode.insertBefore(o, i);
-        };
-      }
-    }();
-    drift.SNIPPET_VERSION = '0.3.1';
-    drift.load('strmer5pkaz6');
-  </script>
-
-  <!-- The script for the iubenda cookie banner -->
-  <style type="text/css"> #iubenda-cs-banner { bottom: 0px !important; left: 0px !important; position: fixed !important; width: 100% !important; z-index: 99999998 !important; background-color: black; } .iubenda-cs-content { display: block; margin: 0 auto; padding: 20px; width: auto; font-family: Helvetica,Arial,FreeSans,sans-serif; font-size: 14px; background: #000; color: #fff;} .iubenda-cs-rationale { max-width: 900px; position: relative; margin: 0 auto; } .iubenda-banner-content > p { font-family: Helvetica,Arial,FreeSans,sans-serif; line-height: 1.5; } .iubenda-cs-close-btn { margin:0; color: #fff; text-decoration: none; font-size: 14px; position: absolute; top: 0; right: 0; border: none; } .iubenda-cs-cookie-policy-lnk { text-decoration: underline; color: #fff; font-size: 14px; font-weight: 900; } </style> <script type="text/javascript"> var _iub = _iub || []; _iub.csConfiguration = {"lang":"en","siteId":1291326,"banner":{"textColor":"white","backgroundColor":"black","slideDown":false,"applyStyles":false},"cookiePolicyId":59141857}; </script><script type="text/javascript" src="//cdn.iubenda.com/cookie_solution/safemode/iubenda_cs.js" charset="UTF-8" async></script>
-
-  <!-- Start of Wistia VIDEO Embed Code -->
-    <script src="https://fast.wistia.com/embed/medias/nqpe8v5nkp.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-  <!-- End of Wistia VIDEO Embed Code -->
-  
   <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4672907.js"></script>
   <!-- End of HubSpot Embed Code -->
@@ -107,169 +67,132 @@
   <!-- END Hotjar Tracking Code for www.weavetravels.com -->
 
 </head>
+
 <body>
-  <div id="page-type">
-    Plan
-  </div>
-
-<!-- SPLASH PAGE -->
-
-  <div class="page-home" id="page-home">   
-    <!-- LOGO -->
-    <img class="weave-logo" src="Weave Logo.png"/>
-    <!-- HEADER TEXT -->
-    <div class="splash-intro">Do you sell travel?</div>
-    <div class="splash-header">Make Your Travel Content</div>  
-    <div class="splash-description">Beautiful</div>
-    <div class="splash-description">Visual</div>
-    <div class="splash-description">Interactive</div>
-    <div class="splash-description">Data Driven</div>
-    <div class="splash-description">Mobile</div>
-    <!-- CALL TO ACTION -->
-    <div class="button" style="position: absolute; bottom: 10vh" id="explore-header">
-      Get Started For Free
+  <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
+    <div class="brand-block"><a href="#" class="w-nav-brand"><img src="images/Weave-Logo.png" srcset="images/Weave-Logo-p-500.png 500w, images/Weave-Logo-p-800.png 800w, images/Weave-Logo.png 1018w" sizes="(max-width: 479px) 8vw, 40px" alt="" class="image"></a>
+      <div class="div-block-3">
+        <div class="nav-weave-travels">Weave Travels</div>
+        <div class="text-block">Experience Before You Book</div>
+      </div>
     </div>
-    <!-- CONTACT LINK -->
-    <div class="contact-button" id="explore-header">
-      <a class="nav-text-ref" target="_top" href="mailto:info@weavetravels.com">
-      Contact Us
-      </a>
-    </div>
-    <div class="nav-container">
-      <div class="nav-text" id="faq-nav-item">FAQ</div>
-      <div class="nav-text"><a class="nav-text-ref" target="_blank" href="https://medium.com/@weavetravels/">Blogs</a></div>
-      <div class="nav-text"><a class="nav-text-ref" target="_blank" href="https://angel.co/weave-travels/jobs">Jobs</a></div>
+    <nav role="navigation" class="nav-menu w-nav-menu"><a href="https://angel.co/weave-travels/jobs" target="_blank" class="nav-link w-nav-link">Jobs</a><a href="#Form-Section" class="nav-link-2 w-nav-link">Contact</a></nav>
+    <div class="w-nav-button">
+      <div class="w-icon-nav-menu"></div>
     </div>
   </div>
-
-<!-- "BEAUTIFUL" PAGE -->
-  <div class="page-full-beautiful" style="background-color: #E472E4">
-    <div class="page-left-beautiful">
-      <div class="feature-title-beautiful">
-        With Weave, It's never been easier to make your trips Beautiful.
-      </div>
-      <div class="button-white" id="explore-middle">
-        Get Started For Free
-      </div>
-    </div>
-    <div class="page-right-beautiful">
-      <img class="ui-image" src="ui-image.png">
-    </div> 
-  </div>
-
-<!-- FEATURE PAGE -->
-
-  <div class="page-full" style="background-color: #FFFFFF">
-    <!-- FEAUTRE ONE -->
-      <div class="page-third">
-        <div class="feature-title-3" style="text-align: center; color: #000000">Make your trips visual with mapping and multimedia.</div>
-        <img class="feature-image" src="visual-feature.png">
-      </div>
-    <!-- FEAUTRE TWO -->
-      <div class="page-third">
-        <div class="feature-title-3" style="text-align: center; color: #000000">Weave is interactive! This means travellers can experience a trip before they book.</div>
-        <img class="feature-image" src="interactive_feature.png">
-      </div>
-    <!-- FEAUTRE THIRD -->
-      <div class="page-third">
-        <div class="feature-title-3">Like never before, you can refine content, products, and marketing based on data driven decisions and Weave analytics.</div>
-        <img class="feature-image" src="analytics_feature.png">
-      </div>
-  </div>
-
-<!-- "MOBILE" PAGE -->
-  <div class="page-mobile-feature">
-    <div class="page-left-mobile">
-      <div class="feature-title-mobile">
-        The world is going mobile. most people search for travel information on their phone or tablet, and mobile bookings are rising. Weave comes standard with an incredible mobile view so your content is beautiful, visual and interactive, everywhere.
-      </div>
-    </div>
-    <div class="page-right-mobile">
-      <img class="mobile-ui-image" src="mobile-phone.png">
-    </div>
-  </div>
-
-<!-- FAQ - PRICING PAGE -->
-
-  <div class="page-full-faq" id="page-faq" style="background-color: #FFFFFF">
-    <div class="page-left-faq"> 
-      <div class="faq-title">FAQ</div>
-      <div class="faq-question">Why Weave?</div>
-      <div class="faq-answer">Weave allows travellers to experience a trip before they press book.</div>
-      <div class="faq-question">What is Weave?</div>
-      <div class="faq-answer">Weave is a website for travel agencies and tour companies to easily make more visual, interactive content - instead of using big blocks of text - to promote their trip offerings.</div>
-      <div class="faq-question">How does Weave work?</div>
-      <div class="faq-answer">Travel companies make incredible trips on Weave. Then they use Weave to drive more traffic, increase conversions and track viewer behaviour.</div>
-      <div class="faq-question">How do travellers find my trips on Weave?</div>
-      <div class="faq-answer">Travellers find your trips 3 ways:</div>
-        <ol class="faq-answer"">
-          <li>Send shareable links to your potential clients.</li>
-          <li>Embed Weave trips onto your website.</li>
-          <li>Travellers search for your trips on the Weave platform.</li>
-        </ol>
-      <div class="faq-question">How do I make trips on Weave?</div>
-      <div class="faq-answer">You can make trips 2 ways:</div>
-        <ol class="faq-answer"">
-          <li>You can make trips yourself, it’s super easy!</li>
-          <li>We can make trips for you. Contact us at info@weavetravels.com to learn more.</li>
-        </ol>
-      <!-- CALL TO ACTION -->
-      <div class="button" style="margin-top: 5vh;" id="explore-footer">
-        Get Started For Free
-      </div>
-    </div>
-    <div class="page-right-faq"> 
-    </div>
-  </div>
-
-<!-- FOOTER -->
-
-  <div class="page-footer">
-    <div class="page-footer-third">
-      <div class="footer-text" style="font-weight: 600" id="return-to-top-link"><a class="nav-text-ref">Return to Top</a></div>
-      <div class="footer-text"><a class="nav-text-ref" target="_blank" href="https://angel.co/weave-travels/jobs">Jobs</a></div>
-      <div class="footer-text"><a class="nav-text-ref" target="_top" href="mailto:info@weavetravels.com" target="_blank">contact: info@weavetravels.com</a></div>
-      <div class="footer-text">(c) 2018 Weave Inc. All Rights Reserved</div>
-    </div>
-    <div class="page-footer-third">
-      <div class="footer-text-container">
-        <a class="footer-text" href="./privacy_policy.html" target="_blank">Privacy Policy</a>
-      </div>
-      <div class="footer-text-container">
-        <a class="footer-text" href="./cookie_policy.html" target="_blank">Cookie Policy</a>
-      </div>
-      <div class="footer-text-container">
-        <a class="footer-text" href="./Weave-Inc.-Standard-Terms-of-Service.pdf" target="_blank">Terms and Conditions</a>
+  <main>
+    <div class="div-block-4">
+      <div data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
+        <div class="primary-tab-menu w-tab-menu">
+          <a data-w-tab="Tab 1" class="primary-tab-link w-inline-block w-tab-link">
+            <div>Tour Operator</div>
+          </a>
+          <a data-w-tab="Tab 2" class="primary-tab-link w-inline-block w-tab-link w--current">
+            <div>Travel Agent</div>
+          </a>
+        </div>
+        <div class="primary-tab-content w-tab-content">
+          <div data-w-tab="Tab 1" class="w-tab-pane">
+            <div class="div-block-10">
+              <div class="w-layout-grid grid">
+                <div id="w-node-5eeef36e63aa-fc46a0f1" class="feature-container">
+                  <div class="feature-title">Create Trips</div>
+                  <div class="img-placeholder">
+                    <img class="weave__feature-image" src="./feature_images/create-trips.png">
+                  </div>
+                  <div class="feature-text">Use our drag and drop interface to easily create visual and interactive trip content, instead of relying on paragraphs and blocks of text.</div>
+                </div>
+                <div id="w-node-5eeef36e63b0-fc46a0f1" class="feature-container">
+                  <div class="feature-title">Distribute Packages</div>
+                  <div class="img-placeholder">
+                    <img class="weave__feature-image" src="./feature_images/distribute-packages.png">
+                  </div>
+                  <div class="feature-text">Use Weave as a new, affiliate distribution channel to drive traffic to your website.</div>
+                </div>
+                <div id="w-node-5eeef36e63b6-fc46a0f1" class="feature-container">
+                  <div class="feature-title">Viewer Analytics</div>
+                  <div class="img-placeholder">
+                    <img class="weave__feature-image" src="./feature_images/viewer-analytics.png">
+                  </div>
+                  <div class="feature-text">Weave is interactive. We can track what kind of content travellers prefer to see and how they interact with it. Then you can use this information to better target and engage with the right customers.</div>
+                </div>
+                <div id="w-node-5eeef36e63bc-fc46a0f1" class="feature-container">
+                  <div class="feature-title">Embed Interface</div>
+                  <div class="img-placeholder">
+                    <img class="weave__feature-image" src="./feature_images/embed.png">
+                  </div>
+                  <div class="feature-text">Similar to embedding a youtube video on your website, you can embed the entire weave interface, and have interactivity directly on your website!</div>
+                </div>
+              </div>
+            </div>
+            <div class="primary-tab-footer"><a href="#Form-Section" class="button w-button">Contact Sales</a></div>
+          </div>
+          <div data-w-tab="Tab 2" class="w-tab-pane w--tab-active">
+            <div class="div-block-10">
+              <div class="w-layout-grid grid">
+                <div id="w-node-b10bca745621-fc46a0f1" class="feature-container">
+                  <div class="feature-title">Create Interactive Proposals</div>
+                  <div class="img-placeholder">
+                    <img class="weave__feature-image" src="./feature_images/create-proposals.png">
+                  </div>
+                  <div class="feature-text">Use Weave to quickly put together interactive and visual maps for your clients. Trips can stay private and we can be your secret weapon for engaging clients.</div>
+                </div>
+                <div id="w-node-b10bca745627-fc46a0f1" class="feature-container">
+                  <div class="feature-title">Showcase Past Work</div>
+                  <div class="img-placeholder">
+                    <img class="weave__feature-image" src="./feature_images/custom-packages.png">
+                  </div>
+                  <div class="feature-text">Showcase your past work by re-creating trips on Weave and either sharing links with potential clients, or embedding a trip directly on your site; similar to a youtube video.</div>
+                </div>
+                <div id="w-node-b10bca74562d-fc46a0f1" class="feature-container">
+                  <div class="feature-title">Customize Packages</div>
+                  <div class="img-placeholder">
+                    <img class="weave__feature-image" src="./feature_images/show-past-work.png">
+                  </div>
+                  <div class="feature-text">Use weave to make a standard trip package, then easily make altered version with our drag and drop interface.</div>
+                </div>
+              </div>
+            </div>
+            <div class="primary-tab-footer"><a href="#Form-Section" class="button w-button">Learn More</a></div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="page-footer-third">
-      <div class="facebook-weave-group-icon-footer" onclick="window.open('https://www.facebook.com/weavetravels/','mywindow');">&nbsp; </div>
-    </div>
-  </div>
+  </main>
+  <div id="Form-Section">
+    <div class="div-block-6">
+      <div class="form-block w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" action="https://weavetravels.us19.list-manage.com/subscribe/post?u=f7b6885bce429df4ebab27744&amp;amp;id=8a75aa477e" method="post" class="form"><label for="name" class="form-field-title">Full Name</label><input type="text" class="form-text-field w-input" maxlength="256" name="name" data-name="Name" id="name" required=""><label for="email" class="form-field-title">Email Address</label><input type="email" class="form-text-field w-input" maxlength="256" name="email" data-name="Email" id="email" required="">
 
-<!-- SIGN UP FORM -->
+          <!-- <label for="company" class="form-field-title">Company Name</label><input type="text" id="company" name="company" data-name="company" maxlength="256" class="form-text-field w-input">
+          <div class="w-radio"><input type="radio" id="operator" name="userType" value="operator" data-name="userType" required="" class="w-radio-input"><label for="operator" class="form-radio-title w-form-label">Tour Operator / Wholesaler / DMO</label></div>
+          <div class="w-radio"><input type="radio" id="agent" name="userType" value="agent" data-name="userType" required="" class="w-radio-input"><label for="agent" class="form-radio-title w-form-label">Travel Agent / Agency</label></div>
+          <div class="w-radio"><input type="radio" id="creator" name="userType" value="creator" data-name="userType" required="" class="w-radio-input"><label for="creator" class="form-radio-title w-form-label">Content Creator / Blogger</label></div>
+          <div class="w-radio"><input type="radio" id="tourist" name="userType" value="tourist" data-name="userType" required="" class="w-radio-input"><label for="tourist" class="form-radio-title w-form-label">Tourist / Traveller</label></div><textarea id="field" name="field" placeholder="How can we help?" maxlength="5000" class="textarea form-text-field w-input"></textarea> -->
 
-  <div class="form-background" id="signup-form">
-    <div class="form-pop">
-      <div id="close-form-pop" class="close-window">
-        &times;
-      </div>
-      <input type="text" value="" class="email-input" id="name-input" placeholder="name" required>
-      <input type="email" value="" name="EMAIL" class="email-input" id="email-input" placeholder="email address" required autocomplete="off">
-      <input type="checkbox" id="consent-checkbox" name="feature" value="privacy" class="consent-checkbox" />
-      <label class="consent-text" for="consent-checkbox">By subscribing to our sign up list, you agree to our
-        <a href="./privacy_policy.html" target="_blank">Privacy Policy</a>
-      </label>
-      <div class="form-error" id="form-error">
-      </div>
-      <div class="button" id="subscribe-button" style="width: 60%; margin-left: auto; margin-right: auto; margin-top: 40px;">
-        <div class="subscribe-button-text">
-            Sign Up
+          <div class="div-block-7"><input type="submit" value="Submit" data-wait="Please wait..." class="button submit-button w-button"></div>
+        </form>
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
         </div>
       </div>
     </div>
   </div>
+  <footer>
+    <div class="div-block-5">
+      <div><img src="images/Weave-Logo.png" width="50" srcset="images/Weave-Logo-p-500.png 500w, images/Weave-Logo-p-800.png 800w, images/Weave-Logo.png 1018w" sizes="50px" alt=""></div>
+      <div class="text-block-2">© 2018 Weave Inc. All rights reserved.</div>
+    </div>
+  </footer>
+  <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
 
+  <!-- Linkedin tracking code -->
   <script type="text/javascript">
     _linkedin_partner_id = "491316";
     window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
@@ -284,6 +207,7 @@
     <noscript>
     <img height="1" width="1" style="display:none;" alt="" src="https://dc.ads.linkedin.com/collect/?pid=491316&fmt=gif" />
   </noscript>
+  <!-- End Linkedin tracking code -->
 
 </body>
 </html>

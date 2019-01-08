@@ -59,10 +59,13 @@ function showConsentError() {
 document.addEventListener('DOMContentLoaded', function() {
 
   // Function that gets called when the subscribe (Create) button is clicked
-  document.getElementById("subscribe-button").addEventListener("click", function(){
+  // document.getElementById("subscribe-button").addEventListener("click", function(){
+    document.getElementById("submit-button").addEventListener("click", function(){
 
-    const name = document.getElementById("name-input").value;
-    const email = document.getElementById("email-input").value;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    // const name = document.getElementById("name-input").value;
+    // const email = document.getElementById("email-input").value;
     page_type = document.getElementById("page-type").textContent;
 
     // Only proceed if consent is given by the user
