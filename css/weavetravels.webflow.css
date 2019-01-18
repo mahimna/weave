@@ -212,7 +212,7 @@
   margin-left: 20px;
   padding-right: 10px;
   border-right: 1px solid #fff;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: 'Roboto', Verdana, Geneva, sans-serif;
   color: #fff;
   font-weight: 400;
 }
@@ -439,13 +439,13 @@
 
 .feature-text {
   width: 300px;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Roboto', 'Droid Sans', sans-serif;
   font-size: 16px;
   text-align: center;
 }
 
 .feature-title {
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Roboto', 'Droid Sans', sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
@@ -520,7 +520,7 @@
 .heading {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Roboto', 'Droid Sans', sans-serif;
   font-size: 30px;
 }
 
