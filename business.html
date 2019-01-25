@@ -18,6 +18,40 @@
   <link href="images/weave-webclip.png" rel="apple-touch-icon">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
+  <!-- start Mixpanel --><script type="text/javascript">(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
+0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
+mixpanel.init("c89d0883ffa62fb9402feccbf4e0ad88");</script><!-- end Mixpanel -->
+
+  <!-- Start of Async Drift Code -->
+  <script>
+  "use strict";
+
+  !function() {
+    var t = window.driftt = window.drift = window.driftt || [];
+    if (!t.init) {
+      if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+      t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+      t.factory = function(e) {
+        return function() {
+          var n = Array.prototype.slice.call(arguments);
+          return n.unshift(e), t.push(n), t;
+        };
+      }, t.methods.forEach(function(e) {
+        t[e] = t.factory(e);
+      }), t.load = function(t) {
+        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+        var i = document.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(o, i);
+      };
+    }
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('strmer5pkaz6');
+  </script>
+  <!-- End of Async Drift Code -->
 </head>
 <body>
   <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
@@ -27,7 +61,27 @@
         <div class="text-block">Experience Before You Book</div>
       </div>
     </div>
-    <nav role="navigation" class="nav-menu w-nav-menu"><a href="http://app.weavetravels.com/search" target="_blank" class="nav-link w-nav-link">Search Trips</a><a href="https://angel.co/weave-travels/jobs" target="_blank" class="nav-link w-nav-link">Jobs</a><a href="#Form-Section" class="nav-link-2 w-nav-link">Contact</a></nav>
+    <nav role="navigation" class="nav-menu w-nav-menu">
+      <a href="http://app.weavetravels.com/search" target="_blank" class="nav-link w-nav-link">
+        Search Trips
+        <script type="text/javascript">  
+          mixpanel.track("Nav App Re-Direct Clicked");
+        </script>
+      </a>
+      <a href="https://angel.co/weave-travels/jobs" target="_blank" class="nav-link w-nav-link">Jobs
+        <script type="text/javascript">  
+          mixpanel.track("Nav Jobs Clicked");
+        </script>
+      </a>
+
+      <a href="#Form-Section" class="nav-link-2 w-nav-link">
+        Contact
+        <script type="text/javascript">  
+          mixpanel.track("Nav Contact Clicked");
+        </script>
+      </a>
+
+    </nav>
     <div class="w-nav-button">
       <div class="icon w-icon-nav-menu"></div>
     </div>
@@ -37,8 +91,17 @@
       <div class="div-block-13">
         <div class="div-block-15">
           <h1 class="heading">Create Beautiful, Interactive and Data Driven Travel Content with Weave Travels.</h1>
-          <div class="text-block-3">Weave let&#x27;s you build, distribute and analyze more interactive itineraries. Instead of relying on PDF brochures and paragraphs of text, easily make your trips visual, interactive and immersive, and track how travellers interact with your trips and content.</div><a href="#Form-Section" class="button w-button">Get Started</a></div>
-        <div class="div-block-17"><img src="images/app-ui-cartoon.png" srcset="images/app-ui-cartoon.png 500w, images/app-ui-cartoon.png 800w, images/app-ui-cartoon.png 1080w, images/app-ui-cartoon.png 1600w, images/app-ui-cartoon.png 2000w, images/app-ui-cartoon.png 2600w, images/app-ui-cartoon.png 3200w, images/app-ui-cartoon.png 4800w" sizes="(max-width: 991px) 80vw, 720px" alt="" class="image-2"><a href="https://app.weavetravels.com/" target="_blank" class="link">Go to the Weave Travels Platform</a></div>
+          <div class="text-block-3">Weave let&#x27;s you build, distribute and analyze more interactive itineraries. Instead of relying on PDF brochures and paragraphs of text, easily make your trips visual, interactive and immersive, and track how travellers interact with your trips and content.</div>
+          <a href="#Form-Section" class="button w-button">Get Started
+            <script type="text/javascript">  
+              mixpanel.track("Splash CTA Clicked");
+            </script>
+          </a>
+        </div>
+        <div class="div-block-17"><img src="images/app-ui-cartoon.png" srcset="images/app-ui-cartoon.png 500w, images/app-ui-cartoon.png 800w, images/app-ui-cartoon.png 1080w, images/app-ui-cartoon.png 1600w, images/app-ui-cartoon.png 2000w, images/app-ui-cartoon.png 2600w, images/app-ui-cartoon.png 3200w, images/app-ui-cartoon.png 4800w" sizes="(max-width: 991px) 80vw, 720px" alt="" class="image-2"><a href="https://app.weavetravels.com/" target="_blank" class="link">Go to the Weave Travels Platform
+          <script type="text/javascript">  
+            mixpanel.track("Splash App Re-Direct Clicked");
+          </script></a>
       </div>
     </div>
   </div>
@@ -47,13 +110,25 @@
       <div data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
         <div class="primary-tab-menu w-tab-menu">
           <a data-w-tab="Tab 1" class="primary-tab-link w-inline-block w-tab-link w--current">
-            <div class="text-block-4">Tour Operator</div>
+            <div class="text-block-4">Tour Operator 
+            </div>
+            <script type="text/javascript">  
+              mixpanel.track("Operator Tab Clicked");
+            </script>
           </a>
           <a data-w-tab="Tab 2" class="primary-tab-link w-inline-block w-tab-link">
-            <div class="text-block-5">Travel Agent</div>
+            <div class="text-block-5">Travel Agent
+              <script type="text/javascript">  
+                mixpanel.track("Agent Tab Clicked");
+              </script>
+            </div>
           </a>
           <a data-w-tab="Tab 3" class="primary-tab-link w-inline-block w-tab-link">
-            <div class="text-block-5">Content Creator</div>
+            <div class="text-block-5">Content Creator
+              <script type="text/javascript">  
+                mixpanel.track("Creator Tab Clicked");
+              </script>
+            </div>
           </a>
         </div>
         <div class="primary-tab-content w-tab-content">
@@ -82,7 +157,11 @@
                 </div>
               </div>
             </div>
-            <div class="primary-tab-footer"><a href="#Form-Section" class="button w-button">Get Started</a></div>
+            <div class="primary-tab-footer"><a href="#Form-Section" class="button w-button">
+              Get Started
+              <script type="text/javascript">  
+                mixpanel.track("Operator CTA Clicked");
+              </script></a></div>
           </div>
           <div data-w-tab="Tab 2" class="w-tab-pane">
             <div class="div-block-10">
@@ -104,7 +183,10 @@
                 </div>
               </div>
             </div>
-            <div class="primary-tab-footer"><a href="#Form-Section" class="button w-button">Learn More</a></div>
+            <div class="primary-tab-footer"><a href="#Form-Section" class="button w-button">Learn More
+              <script type="text/javascript">  
+                mixpanel.track("Agent CTA Clicked");
+              </script></a></div>
           </div>
           <div data-w-tab="Tab 3" class="w-tab-pane">
             <div class="div-block-10">
@@ -112,7 +194,10 @@
                 <div class="text-block-6">We are working on some amazing new features that will let bloggers and content creators make, share and embed incredible content with the Weave Travels platform. If you are a content creator and want to learn more, reach out and let us know!</div>
               </div>
             </div>
-            <div class="primary-tab-footer"><a href="#Form-Section" class="button w-button">Learn More</a></div>
+            <div class="primary-tab-footer"><a href="#Form-Section" class="button w-button">Learn More
+              <script type="text/javascript">  
+                mixpanel.track("Creator CTA Clicked");
+              </script></a></div>
           </div>
         </div>
       </div>
