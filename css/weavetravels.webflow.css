@@ -314,9 +314,9 @@
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 33%;
-  -ms-flex: 0 33%;
-  flex: 0 33%;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
 }
 
 .text-block-2 {
@@ -617,10 +617,7 @@
 }
 
 .section-3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -666,6 +663,10 @@
 
 .link-2:visited {
   text-decoration: none;
+}
+
+.div-block-20 {
+  margin-top: 20px;
 }
 
 @media (max-width: 991px) {
